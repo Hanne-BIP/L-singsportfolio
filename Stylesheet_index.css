@@ -1,0 +1,98 @@
+
+#text {
+    grid-area: text;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: -55px;
+}
+
+#text p {
+    margin-left: 2%;
+    margin-right: 2%; 
+    margin-top: 2%;
+/*font-size: 16px;*/
+}
+
+#footer {
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*
+#header {
+    grid-area: header;
+    background-color: aquamarine;
+}*/
+
+/* Subnav*/ /*
+.navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+}
+.dropdown-submenu {
+    position:relative;
+}
+.dropdown-submenu>.dropdown-menu {
+    top:0;
+    left:100%;
+    margin-top:-6px;
+} */
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 3fr 1fr 11fr;
+    grid-template-areas: 
+        "head head head" 
+        ". . ."
+        "text text text";
+}
+
+/*Tablet*/
+@media screen and (min-width: 982px) {
+    #grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 5fr 2fr 16fr;
+        grid-template-areas: 
+        "head head head"
+        ". . ."
+        "text text text";
+    }
+
+/*Desktop*/
+@media screen and (min-width: 1920px) {
+    
+    #grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 4fr 1fr 2fr 16fr;
+        grid-template-areas: 
+        "head head head"
+        "nav nav nav"
+        "h3 h3 h3"
+        "text text text";
+    }
+    
+    #headline_header {
+        text-align: center;
+    }
+    
+    /*
+    header h3 {
+       display: none;
+    }  */  
+
+    /*#headline {
+        font-size: 5em;
+        background-color: deeppink;
+        text-align: center;
+    }*/
+     
+    
+}

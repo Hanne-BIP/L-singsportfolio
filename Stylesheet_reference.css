@@ -1,0 +1,57 @@
+
+#intro {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#h2_d {
+    padding-bottom: 10px;
+}
+
+#dref {
+    border-bottom: 5px solid #ffa94c;
+}
+
+#h2_k {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#kref {
+    border-bottom: 5px solid #ffa94c;
+}
+
+#h2_w {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#wref {
+    border-bottom: 5px solid #ffa94c;
+}
+
+#h2_p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*Desktop*/
+@media screen and (min-width: 1920px) {
+    .navbar {
+        position: relative;
+        column-span: all;
+        grid-area: nav;
+    }  
+    
+    #intro {
+        text-align: center;
+    }
+    
+    .button {
+        margin-left: 50px;
+    }
+    
+    .centerbutton{
+        width: 202px;
+    }
+} 

@@ -1,0 +1,447 @@
+/*
+#h2_1 {
+    grid-area: h2_1;
+}
+
+#t_1 {
+    grid-area: t_1;
+}
+
+#h2_2 {
+    grid-area: h2_2;
+}
+
+#t_2 {
+    grid-area: t_2;
+}*/
+
+#h2_3 {
+    grid-area: h2_3;
+}
+
+#t_3 {
+    grid-area: t_3
+}
+
+#t_31 {
+    grid-area: t_31;
+}
+
+#t_32 {
+    grid-area: t_32;
+}
+
+#t_33 {
+    grid-area: t_33;
+}
+/*
+#t_2 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#farvehjul_img {
+    grid-area: hj;
+}*/
+
+#cmyk {
+    text-align: center;
+}
+
+.text p {
+    margin-left: 2%;
+    margin-right: 2%; 
+    margin-top: 2%;
+}
+
+section p, h2, button, li {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#kp {
+    height: 20.5vh;
+    background-size: cover;
+    border-bottom: 5px solid #ffa94c;
+}
+
+#fh {
+    height: 53vh;
+    background-size: cover;
+    border-bottom: 5px solid #ffa94c;
+}
+
+#hj {
+    width: 35%;
+}
+
+#fr {
+    height: 63vh;
+    background-size: cover;
+    border-bottom: 5px solid #ffa94c;    
+}
+
+#hsb {
+    height: 41.5vh;
+    background-size: cover;
+    border-bottom: 5px solid #ffa94c;
+}
+
+#fss {
+    height: 140vh;
+    border-bottom: 5px solid #ffa94c;
+}
+
+#fpn {
+    height: 14vh;
+    border-bottom: 5px solid #ffa94c;
+}
+
+
+/*Tablet*/ /*
+@media screen and (min-width: 982px) {
+    #kp {
+        background-image: url(Primrose_s.png);
+        height: 22vh;
+        background-size: cover;
+        border: 5px dashed red;
+    }
+
+    #fh {
+        background-image: url(Primrose_s.png);
+        height: 52vh;
+        background-size: cover;
+        border: 5px dashed red;
+    }
+
+    #hj {
+        width: 30%;
+    }
+
+    #fr {
+        background-image: url(Primrose_s.png);
+        height: 55vh;
+        background-size: cover;
+        border: 5px dashed red;    
+    }
+
+    #hsb {
+        background-image: url(Primrose_s.png);
+        height: 37vh;
+        background-size: cover;
+        border: 5px dashed red;
+    }  
+
+} */
+
+
+/*Tablet*/ 
+@media screen and (min-width: 1920px) {
+    
+    #kp {
+        height: 23vh;
+    }
+    
+/*Farvehjul*/    
+    #h2_1 {
+      margin-bottom: -25px;  
+    }
+    
+    #fh {
+        height: 50vh;
+    }
+    
+    #h2_2 {
+        margin-bottom: -25px;
+    }
+    
+    #hj {
+        width: 50%;
+        grid-area: hj;
+    }
+    
+    #fhlist {
+        grid-area: fhlist;
+    }
+    
+    #fhtext {
+        grid-area: fhtext;
+    }
+    
+    #s_imgsfh {
+        grid-area: source;
+    }
+    
+    #opdeling {
+        grid-area: opdeling;
+        margin-left: 20px;
+    }
+    
+    #fhimg {
+        grid-area: fhimg;
+    }
+    
+    #t_2 {
+        display: grid;
+        grid-template-areas:
+            "fhlist fhlist fhimg"
+            "opdeling opdeling fhimg"
+            "fhtext fhtext fhtext"
+            /*"fhtext fhtext ."*/;
+    }
+    
+    /*
+    #fhgrid {
+        display: grid;
+        grid-template-areas:
+            "fhlist fhlist fhlist"
+            "opdeling opdeling hj" 
+            "opdeling opdeling source"
+            "fhtext fhtext fhtext "
+            "s_fh s_fh .";
+    }
+    
+    /*#t_2 {
+        float: left;
+        margin-left: 10px;
+    }
+    
+    #hj {
+        display: inline-block;
+        width: 20%;
+        }*/
+    
+    /*.img_section {
+        text-align: end;
+    }*/
+    /*
+    #hj imgtext, #fh .imgsource {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    #fh .imgtext {
+        text-align: end;
+        width: 350px;
+        float: right;
+    }
+    
+    #s_fh {
+        grid-area: s_fh;
+        float: left;
+    }
+*/
+/*Farverum*/    
+    #rgb {
+        grid-area: imgrgb;
+        /*float: right;*/
+    }
+    
+    #cmyk {
+        grid-area: imgcmyk;
+        /*float: right;*/
+    }
+    
+    #textrgb {
+        grid-area: textrgb;
+    }
+    
+    #textcmyk {
+        grid-area: textcmyk;
+    }
+  
+    #fr {
+        height: 82vh;
+        width: 88.7vw;
+    }
+    
+    #t_31 {
+        display: grid;
+        grid-template-areas: 
+            "t_31 imgrgb"
+            "t_31 imgrgb"
+            ". textrgb";
+    }
+    
+    #t_32 {
+        display: grid;
+        grid-template-areas: 
+            "t_32 imgrgb"
+            "t_32 imgrgb"
+            ". textrgb";
+    }
+  
+/*Hue Saturation Brightness*/
+    #hsblist {
+        grid-area: list;
+    }
+    
+    #listtext {
+        grid-area: listtext;
+    }
+    
+    #hsbimg {
+        width: 90%;
+        height: auto;
+        grid-area: hsbimg;
+    }
+    
+    #hsbtext {
+        grid-area: hsbtext;
+    }
+    
+    #s_hsb {
+        grid-area: s_hsb;
+    }
+    
+    #t_4 {
+        display: grid;
+        grid-template-areas: 
+            "list hsbimg"
+            "listtext hsbtext"
+            "s_hsb ."
+    }
+    
+    #hsb {
+        height: 48.5vh;
+    }
+
+/*Farvesammensætninger*/
+    #fss img {
+        width: 25%;
+        height: auto;
+    }
+    
+    #monoimg {
+        height: 110%;
+    }
+    
+    #intro {
+        grid-area: intro;
+    }
+    
+    #mono {
+        grid-area: mono;
+        text-align: center;
+    }
+    
+    #limono {
+        grid-area: limono;
+    }
+    
+    #ana {
+        grid-area: ana;
+        text-align: center;
+    }
+    
+    # liana {
+        grid-area: liana;
+    }
+    
+    #kom {
+        grid-area: kom;
+        text-align: center;
+    }
+    
+    #likom {
+        grid-area: likom;
+    }
+    
+    #skom {
+        grid-area: skom;
+        text-align: center;
+    }
+    
+    #liskom {
+        grid-area: liskom;
+    }
+    
+    #tri {
+        grid-area: tri;
+        text-align: center;
+    }
+    
+    #litri {
+        grid-area: litri;
+    }
+    
+    #ter {
+        grid-area: ter;
+        text-align: center;
+    }
+    
+    #liter {
+        grid-area: liter;
+    }
+    
+    #outro {
+        grid-area: outro;
+    }
+    
+    #t_5 {
+        display: grid;
+        grid-template-areas:
+            "intro intro"
+            "limono liana"
+            "mono ana"
+            "likom liskom"
+            "kom skom"
+            "litri liter"
+            "tri ter"
+            "outro outro";
+    }
+    
+    #fss {
+        height: 126vh;
+    }
+    
+/*Farver på nettet*/
+    #fpn {
+        height: 19vh;
+    }
+}
+
+/*Desktop*/
+@media screen and (min-width: 1920px) {
+    
+    #kp {
+        height: 22vh;
+    }
+    
+    /*Farvehjul*/
+    #fh {
+        height: 41vh;
+    }
+    
+    #t_2 {
+        float: left;
+        margin-left: 10px;
+    }
+    
+    #hj {
+        display: inline-block;
+        width: 20%;
+        }
+    
+    /*Farverum*/
+    #fr {
+        height: 82vh;
+        width: 88.7vw;
+    }
+    
+    /*Hue Saturation Brightness*/
+    #hsb {
+        height: 48.5vh;
+    }
+    
+    /*Farvesammensætning*/
+    #fss {
+        height: 126vh;
+    }
+    
+    /*Farver på nettet*/
+    #fpn {
+        height: 19vh;
+    }
+}

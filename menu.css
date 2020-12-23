@@ -1,0 +1,56 @@
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.navbar a {
+    font-size: 26px;
+}
+
+.nav-link:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.nav-item active:hover {
+    color: black;
+}
+
+#navbarDropdown {
+    color: white;
+}
+
+#navbarDropdown:hover {
+    color: black;
+}
+
+.dropdown-menu {
+    background-color: #ffa94c;
+    border-style: none;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.dropdown-item:hover {
+    color: black;
+    font-weight: bold;
+    background-color: #ffa94c;
+}
+
+.dropdown-item:active {
+    color: black;
+    font-weight: bold;
+}
+
+/*Desktop*/
+@media screen and (min-width: 1920px) {
+    .navbar {
+        position: relative;
+        /*top: */
+        column-span: all;
+        grid-area: nav;
+        width: 100%;
+    } 
