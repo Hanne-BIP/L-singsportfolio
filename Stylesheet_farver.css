@@ -48,17 +48,17 @@
 #cmyk {
     text-align: center;
 }
-
+/*
 .text p {
     margin-left: 2%;
     margin-right: 2%; 
     margin-top: 2%;
-}
-
+}*/
+/*
 section p, h2, button, li {
     margin-left: 2%;
     margin-right: 2%;
-}
+}*/
 
 #kp {
 /*    height: 20.5vh;*/
@@ -140,17 +140,17 @@ section p, h2, button, li {
     }
     
 /*Farvehjul*/    
-    #h2_1 {
+    /*#h2_1 {
       margin-bottom: -25px;  
-    }
+    }*/
     
     #fh {
       /* height: 50vh;*/
     }
-    
+    /*
     #h2_2 {
         margin-bottom: -25px;
-    }
+    }*/
     
     #hj {
         width: 50%;

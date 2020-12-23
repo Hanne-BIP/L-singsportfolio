@@ -3,6 +3,10 @@
     border-bottom: 5px solid #ffa94c;
 }
 
+#sec1 {
+    border-bottom-style: none;
+}
+
 #anatomy {
     width: 50%;
     height: 50%;
