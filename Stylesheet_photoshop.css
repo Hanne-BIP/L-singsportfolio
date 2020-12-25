@@ -3,12 +3,16 @@
     border-bottom: 5px solid #ffa94c;
 }
 
-#sec1 {
+/*#sec1 {
     border-bottom-style: none;
-}
+}*/
 
 h3 {
     margin-top: 10px;
+}
+
+table {
+    margin-bottom: 10px;
 }
 
 #srbimg {
@@ -19,6 +23,7 @@ h3 {
 /*Desktop*/
 @media screen and (min-width: 1920px) {
 
+/*Pre-production*/
     .img_section {
         text-align: center;
     }

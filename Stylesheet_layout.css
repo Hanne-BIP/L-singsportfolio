@@ -13,6 +13,7 @@ h1 {
 }
 
 h2 {
+    font-family: 'Petrona', serif;
     font-weight: bold;
     font-size: 40px;
     /*margin-left: 25px;*/
@@ -20,9 +21,10 @@ h2 {
 }
 
 h3 {
+    font-family: 'Petrona', serif;
     font-weight: bold;
     font-size: 30px;
-    margin-left: 25px;
+    /*margin-left: 25px;*/
 }
 
 header {
@@ -105,6 +107,22 @@ li {
     height: 35px;
     width: 195px;
     line-height: 35px;
+}
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: center;
+    background-color: #2FA8C1;
+    color: white;
+}
+
+.symbol img {
+    width: 25%;
+    height: auto;
 }
 
 #footer {
@@ -190,11 +208,16 @@ li {
     }
     
     .source {
-        font-size: 14px;
+        font-size: 16px;
     }
     
     .img_section {
         text-align: right;
+    }
+    
+    table {
+        font-size: 20px;
+        align-content: center;
     }
     
     #footer {
