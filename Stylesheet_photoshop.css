@@ -15,25 +15,52 @@ table {
     margin-bottom: 10px;
 }
 
-#srbimg {
-    width: 100%;
+#sktimg {
+    width: 50%;
     height: auto;
+}
+
+#refleksion {
+    border-bottom-style: none;
 }
 
 /*Desktop*/
 @media screen and (min-width: 1920px) {
 
-/*Pre-production*/
-    .img_section {
-        text-align: center;
+    #oof_intro {
+        grid-area: intro;
     }
-    #srb {
+
+    #skt {
+        grid-area: skt;
         text-align: center;
     }
     
-    #srbimg {
-        width: 75%;
-        height: auto;  
+    #tools {
+        grid-area: tools;
+    }
+    
+    #oof_outro {
+        grid-area: outro;
+    }
+    
+    #plakat {
+        grid-area: plakat;
+    }
+    
+    #sktimg {
+        width: 50%;
+        height: auto;
+    }
+    
+    #t_3 {
+        display: grid;
+        grid-template-areas:
+            "intro skt"
+            "intro skt"
+            "tools skt"
+            "outro skt";
+
     }
     
 }

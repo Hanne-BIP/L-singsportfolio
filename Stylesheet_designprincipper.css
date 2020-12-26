@@ -1,0 +1,143 @@
+
+.section {
+    border-bottom: 5px solid #ffa94c;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+#gestaltimg, #contimg, #simimg, #proximg {
+    width: 100%;
+    height: auto;
+}
+
+#refleksion {
+    border-bottom-style: none;
+}
+
+#closure, #commonfate, #continuation, #similarity, #figureground, #proximity {
+    border-bottom: 5px dashed #ffa94c;
+}
+
+/*Desktop*/
+@media screen and (min-width: 1920px) {
+    #gestaltimg {
+        width: 75%;
+        height: auto;
+    }
+    
+    #gestalt {
+        text-align: center;
+    }
+    
+    #closure, #commonfate, #continuation, #similarity, #figureground, #proximity, #symmetry {
+        border-style: none;
+    }
+    
+    #closure {
+        grid-area: cls;
+        border-right: 2.5px dashed #ffa94c;
+        border-bottom: 2.5px dashed #ffa94c;
+    }
+    
+    #commonfate {
+        grid-area: cf;
+    }
+    
+    #continuation {
+        grid-area: cont;
+        border-left: 2.5px dashed #ffa94c;
+        border-bottom: 2.5px dashed #ffa94c;
+    }
+    
+    #similarity {
+        grid-area: sim;
+        border-right: 2.5px dashed #ffa94c;
+        border-bottom: 2.5px dashed #ffa94c;
+        border-top: 2.5px dashed #ffa94c;
+    }
+    
+    #figureground {
+        grid-area: fg;
+        border-left: 2.5px dashed #ffa94c;
+        border-bottom: 2.5px dashed #ffa94c;
+        border-top: 2.5px dashed #ffa94c;
+    }
+    
+    #proximity {
+        grid-area: prox;
+        border-right: 2.5px dashed #ffa94c;
+        border-bottom: 5px dashed #ffa94c;
+        border-top: 2.5px dashed #ffa94c;
+    }
+    
+    #symmetry {
+        grid-area: sym;
+        border-left: 2.5px dashed #ffa94c;
+        border-bottom: 5px dashed #ffa94c;
+        border-top: 2.5px dashed #ffa94c;
+    }
+    
+    #cls, #cf, #cont, #sim, #fg, #prox, #sym, #ws {
+        text-align: center;
+    }
+    
+    #symimg, #contimg {
+        width: 80%;
+    }
+    
+    #proximg {
+        width: 90%;
+    }
+    
+    #continuation h3, #figureground h3, #symmetry h3{
+        margin-left: 5px;
+    }
+    
+    #continuation p, #figureground p, #symmetry p{
+        margin-left: 5px;
+    }
+    
+    #gestaltgrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "cls cont"
+            "sim fg"
+            "prox sym"
+            "cf cf";
+    }
+    
+    /*Common fate*/
+    #cf_intro {
+        grid-area: cf_intro;
+    }
+    
+    #cf {
+        grid-area: cf_img;
+    }
+    
+    #cf_grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "cf_intro cf_img";
+    }
+    
+    /*White space*/
+    #ws_intro {
+        grid-area: ws;
+    }
+    
+    #ws {
+        grid-area: img;
+    }
+    
+    #t_3 {
+        display: grid;
+        grid-template-areas: 
+            "ws img";
+    }
+
+}

@@ -12,6 +12,10 @@ h3 {
     margin-top: 10px;
 }
 
+#refleksion {
+    border-bottom-style: none;
+}
+
 /*Desktop*/
 @media screen and (min-width: 1920px) {
 

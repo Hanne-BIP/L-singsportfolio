@@ -98,6 +98,9 @@ section p, h2, button, li {
     border-bottom: 5px solid #ffa94c;
 }
 
+#refleksion {
+    border-bottom-style: none;
+}
 
 /*Tablet*/ /*
 @media screen and (min-width: 982px) {
