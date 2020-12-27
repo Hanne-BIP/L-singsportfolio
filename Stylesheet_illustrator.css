@@ -1,0 +1,21 @@
+
+.section {
+    border-bottom: 5px solid #ffa94c;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+table {
+    margin-bottom: 10px;
+}
+
+#refleksion {
+    border-bottom-style: none;
+}
+
+/*Desktop*/
+@media screen and (min-width: 1920px) {
+
+}

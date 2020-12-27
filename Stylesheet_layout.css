@@ -25,6 +25,7 @@ h3 {
     font-weight: bold;
     font-size: 30px;
     /*margin-left: 25px;*/
+    margin-top: 10px;
 }
 
 header {
@@ -86,6 +87,8 @@ li {
     border-radius: 4px;
     border-style: none;
     margin-left: 25px;
+    margin-bottom: 10px;
+    width: 275px;
 }
 
 .button a {
@@ -105,13 +108,18 @@ li {
 .centerbutton{
     text-align: center;
     height: 35px;
-    width: 195px;
+    /*width: 195px;*/
+    width: 275px;
     line-height: 35px;
 }
 
 table, th, td {
     border: 2px solid black;
     border-collapse: collapse;
+}
+
+table {
+    font-size: 25px;
 }
 
 th {
@@ -123,6 +131,14 @@ th {
 .symbol img {
     width: 25%;
     height: auto;
+}
+
+#margin {
+    min-height: calc(100vh - 70px);
+}
+
+#footer {
+    height: 70px;
 }
 
 #footer {

@@ -1,0 +1,35 @@
+
+#refleksion {
+    border-top: 5px solid #ffa94c;
+    border-bottom-style: none;
+}
+
+#infoimg, #bsimg {
+    width: 100%;
+    height: auto;
+}
+
+.centerbutton{
+    text-align: center;
+    height: 35px;
+    width: 260px;
+    line-height: 35px;
+}
+
+/*Desktop*/
+@media screen and (min-width: 1920px) {
+    .img_section {
+        text-align: center;
+    }   
+
+    #infoimg, #bsimg {
+        width: 50%;
+        height: auto;
+    }
+    
+    #buttons {
+        text-align: center;
+    }
+    
+    
+}
