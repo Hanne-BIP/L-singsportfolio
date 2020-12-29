@@ -444,6 +444,10 @@ section p, h2, button, li {
 /*        height: 19vh;*/
     }
     
+    .button {
+        width: 165px;
+    }
+    
     .img_section {
         text-align: right;
     }

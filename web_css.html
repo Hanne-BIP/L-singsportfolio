@@ -1,0 +1,382 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Webudvikling - CSS</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Petrona:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href=Stylesheet_layout.css>
+        <link rel="stylesheet" href="Stylesheet_css.css">
+        <link rel="stylesheet" href="menu.css">
+    </head>
+    
+    
+    <body>
+        <div id="grid">
+            
+            <header>
+                <h1 id="headline_header">CSS</h1>
+            </header>
+            
+                        <!-- Bootstrap Navbar -->
+            <nav class="navbar navbar-expand-xl navbar-dark" style="background-color: #ffa94c;">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                   <li class="nav-item">
+                        <a class="nav-link" href="index.html">Forside<span class="sr-only">(current)</span></a>
+                      </li>
+                <!--Design--> 
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="index_design.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Design</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="design_illustrator.html">Illustrator</a>
+                            <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="design_photoshop.html">Photoshop</a>
+                            <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="design_farver.html">Farver</a>
+                            <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="design_designprincipper.html">Designprincipper</a>
+                            <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="design_typografier.html">Typografier</a>
+                            <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="design_video.html">Videoredigering</a>
+                    </div>
+                  </li>
+                <!--Kommunikation--> 
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kommunikation</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Grundlæggende kommunikation</a>
+                            <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Paradigmer</a>
+                            <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Kvantitativ og kvalitativ empiri</a>
+                            <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Usability testmetoder</a>
+                            <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Præsentationsteknikker</a>
+                            <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Tekstproduktion</a>
+                            <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Ophavsret og licens</a>
+                            <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Business Model Canvas</a>
+                    </div>
+                  </li>
+                <!--Webudvikling--> 
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Webudvikling</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="web_html.html">HTML</a>
+                            <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="web_css.html">CSS</a>
+                            <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Grid og responsive design</a>
+                            <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Versionsstyring</a>
+                            <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">HTML og CSS workshop</a>
+                            <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Serverside scripting</a>
+                            <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Frameworks</a>
+                            <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Kamerateknikker</a>
+                            <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Informationsarkitektur</a>
+                      </div>
+                  </li>
+                <!--Projekter--> 
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projekter</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="projekt_designthinking.html">Design Thinking</a>
+                            <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="projekt_hackathon.html">Hackathon</a>
+                            <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="projekt_FN.html">FN's 17 verdensmål</a>
+                            <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="projekt_onepage.html">One page</a>
+                            <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Portfolio</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reference.html">Bilag</a>
+                  </li>
+                </ul>
+              </div>
+            </nav> 
+            
+        <section id="margin">
+            
+        <!--Intro-->
+        <section class="section" id="sec1">
+            <h2 id="h2_1">Introduktion:</h2>
+            <section id="t_1" class="text">
+                <p>CSS står for Cascading Style Sheets. Man bruger det det til at ændre udseende på HTML kode (man kan dog også bruge &#60;style&#62; i HTML dokumentet). CSS skrives i et stylesheet som refereres i HTML dokumentets &#60;head&#62;:</p>
+                    <section class="img_section" id="ss">
+                        <img id="ssimg" src="Billeder/Webudvikling/css_stylesheet.PNG" alt="Implimentering af stylesheet.">
+                        <p class="imgtext" id="textss">Implimentering af et stylesheet i HTML.</p>
+                    </section>  
+                <p>Styelsheets kan gøre det nememre at få et ensartet design på en hel hjemmeside, da alle sider kan referere den samme overordnede stylesheet, og så have deres egen til unikke dele på de enkelte sider (ligesom jeg har gjort på denne her hjemmeside).</p>
+                <p class="source">Kilde: <a href="https://eadania.mrooms.net/course/view.php?id=2649#section-5">PowerPoint fra undervisningen (14/9 2020)</a></p>
+            </section>
+        </section>   
+            
+        <!--Syntaks-->    
+        <section class="section" id="sec2">
+            <h2 id="h2_2">Syntaks:</h2>
+            <section id="t_2" class="text">
+                <p>Som med HTML, skal CSS skrives op på en bestemt måde, med bestemt syntaks:</p>
+                <section class="img_section" id="stx">
+                        <img id="stximg" src="Billeder/Webudvikling/css_syntax.PNG" alt="CSS syntax.">
+                        <p class="imgtext" id="textstx">Opstilling af kode i CSS.
+                        <br><i>Kilde til billede: <a href="https://eadania.mrooms.net/course/view.php?id=2649#section-5">PowerPoint fra undervisningen (14/9 2020)</a></i></p>
+                    </section> 
+                <p>Her er af det syntaks vi lærte om de første par dage vi havde om CSS. Der findes selvfølgelig meget andet syntaks, men de her er nogle af dem man bruger mest.</p>
+                <section id="CSS tabel">
+            <table>
+                <tr>
+                    <th>Navn:</th>
+                    <th>Hvad det gør:</th>
+                    <th>Syntax:</th>
+                </tr>
+                <tr>
+                    <th>Kommentarer:</th>
+                    <td>Kommentarer til koden der ikke vises på siden.</td>
+                    <td><p>/* */</p></td>
+                </tr>
+                <tr>
+                    <th>Id selector:</th>
+                    <td>Id på det helt specifikke element vi vil style. Skal først være defineret i ens HTML dokument.</td>
+                    <td><p><b>HTML:</b> &#60;tag id="navn på id"&#62;
+                        <br><b>CSS:</b> #navn på id &#123; &#125;</p></td>
+                </tr>
+                <tr>
+                    <th>Class selector:</th>
+                    <td>Selector for hvis man vil style flere elementer ens. Skal først være defineret i ens HTML dokument.</td>
+                    <td><p><b>HTML:</b> &#60;tag class="navn på class"&#62;
+                        <br><b>CSS:</b> .navn på class &#123; &#125;</p></td>
+                </tr>
+                <tr>
+                    <th>Deklaration:</th>
+                    <td>Hvordan ens selector skal styles.</td>
+                    <td><p>selector &#123;egenskab: værdi;&#125;</p></td>
+                </tr>
+                <tr>
+                    <th>Egenskaber:</th>
+                    <td>Hvad der skal styles (fx: font, farve, margin).</td>
+                    <td><p>selector &#123;<i>egenskab:</i> værdi;&#125;</p></td>
+                </tr>
+                <tr>
+                    <th>Værdier:</th>
+                    <td>Hvad egenskaben specifikt skal være (fx: fonttype, farvekode, mål).</td>
+                    <td><p>selector &#123;egenskab: <i>værdi;</i>&#125;</p></td>
+                </tr>
+                <tr>
+                    <th>Baggrundsfarve:</th>
+                    <td>Egenskaben for hvilken baggrundsfarve selectoren har.</td>
+                    <td><p>selector &#123;<i>background-color:</i> værdi;&#125;</p></td>
+                </tr>
+                <tr>
+                    <th>Skrifttype:</th>
+                    <td>Egenskaben for hvilken font type selectoren har.</td>
+                    <td><p>selector &#123;<i>font-family:</i> værdi;&#125;</p></td>
+                </tr>
+                <tr>
+                    <th>Skriftstørrelse:</th>
+                    <td>Egenskaben for hHvilken font størrelse selectoren har.</td>
+                    <td><p>selector &#123;<i>font-size:</i> værdi;&#125;</p></td>
+                </tr>
+                <tr>
+                    <th>Skrift tykkelse:</th>
+                    <td>Egenskaben for hvilken font tykkelse selectoren har.</td>
+                    <td><p>selector &#123;<i>font-weight:</i> værdi;&#125;</p></td>
+                </tr>
+                <tr>
+                    <th>Skriftfarve:</th>
+                    <td>Egenskaben for hvilken farve fonten i selectoren har.</td>
+                    <td><p>selector &#123;<i>color:</i> værdi;&#125;</p></td>
+                </tr>
+                <tr>
+                    <th>Tekstjustering:</th>
+                    <td>Egenskaben for hvordan teksten er justeret i selectoren (i forhold til en kant).</td>
+                    <td><p>selector &#123;<i>text-align:</i> værdi;&#125;</p></td>
+                </tr>
+                <tr>
+                    <th>Margen:</th>
+                    <td>Egenskaben for at bestemme afstand mellem indhold af selectoren og tilstødende elementer.</td>
+                    <td><p>selector &#123;<i>margin:</i> værdi;&#125;</p></td>
+                </tr>
+                <tr>
+                    <th>Padding:</th>
+                    <td>Egenskaben for af bestemme afstanden mellem indhold af selectoren og ramme.</td>
+                    <td><p>selector &#123;<i>padding:</i> værdi;&#125;</p></td>
+                </tr>
+                <tr>
+                    <th>Bredde:</th>
+                    <td>Egenskaben for at angive bredde på selectoren.</td>
+                    <td><p>selector &#123;<i>width:</i> værdi;&#125;</p></td>
+                </tr>
+                <tr>
+                    <th>Højde:</th>
+                    <td>Egenskaben for at angive højeden på selectoren.</td>
+                    <td><p>selector &#123;<i>height:</i> værdi;&#125;</p></td>
+                </tr>
+                <tr>
+                    <th>Box model (inline):</th>
+                    <td>Egenskaben for at dele elementerne i selectoren op i horisontale kasser.</td>
+                    <td><p>selector &#123;<i>display: inline;</i>&#125;</p></td>
+                </tr>
+                <tr>
+                    <th>Box model (block):</th>
+                    <td>Egenskaben for at dele elementerne i selectoren op i vertikale kasser.</td>
+                    <td><p>selector &#123;<i>display: block;</i>&#125;</p></td>
+                </tr>
+            </table>    
+        </section> 
+        
+                <p class="source">Kilde: <a href="https://eadania.mrooms.net/course/view.php?id=2649#section-5">PowerPoint fra undervisningen (14/9 2020)</a></p>
+            </section>                
+        </section>
+            
+        <!---Selectors-->    
+        <section class="section" id="sec3">
+            <h2 id="h2_3">Selectors:</h2>
+                <section id="t_3" class="text">
+                    <section id="primær">
+                        <p>Der er 3 primære selectors:</p>
+                        <h3>Type/element selectors:</h3>
+                        <p>Almindelige tags (fx &#60;p&#62; eller &#60;body&#62;). I CSS stylesheetet skriver man bare navnet på tagget.</p>
+                        <h3>Id selectors:</h3>
+                        <p>Et specifikt element man vil style. Det mærkes med et unikt id (&#60;tag id=”id”&#62;). I CSS stylesheetet skrives navnet på id'et med et hashtag foran (#id &#123; &#125;).</p>
+                        <h3>Class selectors:</h3>
+                        <p>Flere elementer man vil style ens. Det mærkes med en unik klasse (&#60;tag class=”class”&#62;). I CSS stylesheetet skrives navnet på klassen med et punktum foran (.class &#123; &#125;).</p>   
+                    </section>
+                    <section id="sekundær">
+                        <p>Der er også andre former for selectors der er for noget mere specifikt:</p>
+                        <h3>Strukturelle selectors:</h3>
+                        <p>Også kaldet combinator operators. Det beskriver hierarkiet mellem de forskellige selectors, fx: "Descendant selectors". <br>Det er en type af selectors hvor det er et specifikt element i selectoren man vil style, så den altså er en decendant af selectoren. De kan bruges i stedet for class selectoren hvis det alle er samme elementer i selectoren der skal styles ens.
+                        <br><b>Fx:</b> på billedet er der en descendant selector på de links i mine knapper der styler texten hvid og placerer teksten i midten:</p>
+                        <section class="img_section" id="ds">
+                            <img id="dsimg" src="Billeder/Webudvikling/css_descendant.PNG" alt="Decendant selectors.">
+                            <p class="imgtext" id="textds">Descendant selectors som vist på en knap.</p>
+                        </section>
+                        <h3>Pseudo selectors:</h3>
+                        <p>Pseudo selectors er når det er et specifikt stadie af elementet der skal styles. De skrives i ens CSS stylesheet ved at sætte et colon efter ens selector og så skrive navnet på stadiet. 
+                        <br><b>Fx:</b> på billedet er en pseudo selector på mine knapper når man har cursoren over dem, så bliver farven stylet til en orange i stedet for blå.</p>
+                        <section class="img_section" id="ps">
+                            <img id="psimg" src="Billeder/Webudvikling/css_pseudo.PNG" alt="Pseudo selectors.">
+                            <p class="imgtext" id="textps">Pseudo selectors som vist på en knap.</p>
+                        </section>
+                        <button class="button" type="button">
+                        <div class="centerbutton"><p><a href="#">Prøveknap</a></p></div>
+                        </button>
+                    </section>
+            </section>
+            <p class="source">Kilde: <a href="https://eadania.mrooms.net/course/view.php?id=2649#section-5">PowerPoint fra undervisningen (14/9 2020)</a></p>
+        </section>
+        
+        <!--Kaskaderegler-->
+        <section class="section" id="sec4">
+            <h2 id="h2_4">Kaskaderegler:</h2>
+            <section id="t_4" class="text"> 
+                <p>Kaskadereglerne fortæller om den rækkefølge man skal lave sine definitioner i sin CSS i.
+                <br>Der er følgende regler:</p>
+                <h3>Cascading:</h3>
+                <p>Regler for hvad man gør med modstridende CSS definitioner:</p>
+                <ul>
+                    <li><b>Source order:</b> Det man skriver til sidst vil have førsteprioritet og kan overskrive alt andet. Derfor skal man have det vigtigste til at stå til sidst.</li>
+                    <li><b>Specificity:</b> Hvis noget er defineret mere specifikt, som med en id eller en class, vil det tage førsteprioritet, også selvom det står før i ens CSS stylesheet.</li>
+                </ul>
+                <h3>Inheritance:</h3>
+                <p>Hvis man har defineret noget i et parentelement, vil alle under-elementer arve samme definition.</p>
+                <h3>!important:</h3>
+                <p>Hvis man bruger denne regel, overskriver den alle de andre kaskaderegler, så man skal helst undgå at bruge den.</p>
+            </section> 
+            <p class="source">Kilde: <a href="https://eadania.mrooms.net/course/view.php?id=2649#section-5">PowerPoint fra undervisningen (14/9 2020)</a></p>
+        </section>
+        
+        <!--Farver og skrifttyper-->
+        <!--<section class="section" id="sec5">
+            <h2 id="h2_5">Farver og skrifttyper:</h2>
+            <section id="t_5" class="text"> 
+                <section id="t_51" class=text>
+                    <h3>Farver:</h3>
+                    <p>Farver kan skrives på 3 forskellige måder i CSS:</p>
+                    <ul>
+                        <li><b>RBG:</b> står for rød grøn blå. Skrives som (r, g, b). Hvis man vil ændre opaciteten på farven, skal man skrive (r, g, b, o%).</li>
+                        <li><b>HEX-kode:</b> står for hexidecimal. Her sættes hex-koden bare ind.</li>
+                        <li><b>HSL:</b> står for hue saturation lightness. Skrives som (h%, s%, l%). Hvis man vil ændre opaciteten på farven, skal man skrive (h%,s%,l%,o%)</li>
+                    </ul>
+                    <h3>Skrifttyper:</h3>
+                    
+                </section>
+                <section id="t_52" class=text>
+                    <h3>Absolut adressering:</h3>
+                    <p>Hvor adresseringen ikke går ud fra hvor man er i link-kæden.</p>
+                    <section class="img_section" id="abs">
+                        <img id="absimg" src="Billeder/Webudvikling/html_abs.PNG" alt="Absolut adressering af links.">
+                        <p class="imgtext" id="textabs">Absolut adressering af links i HTML.</p>
+                    </section>
+                    <ul>
+                        <li><p>Man skriver hele adressen, altså: &#60;a href= “http:/link.dk”&#60;tekst som bliver link &#60;/a&#62;</p></li>
+                    </ul> 
+                </section>
+            <p class="source">Kilde: <a href="https://eadania.mrooms.net/course/view.php?id=2649#section-5">PowerPoint fra undervisningen (14/9 2020)</a></p>
+            </section>
+        </section>-->
+    
+        <!--Billeder-->
+        <section class="section" id="sec6">
+            <h2 id="h2_6">Billeder:</h2>
+            <section id="t_6" class="text">  
+                <p>Man bruger &#60;img&#62; tag til billeder, med en <i>src</i> attribut. 
+                <br>Man kan angive en højde og bredde på billederne i CSS, selvom det dog er bedst at have ændret billedets størrelse inden man sætter det ind i ens HTML.</p>
+                <section class="img_section" id="pic">
+                        <img id="picimg" src="Billeder/Webudvikling/html_pic.PNG" alt="Indsætning af billede.">
+                        <p class="imgtext" id="textpic">Indsætning af billede i HTML.</p>
+                    </section>
+            </section>
+            <p class="source">Kilde: <a href="https://eadania.mrooms.net/course/view.php?id=2649#section-5">PowerPoint fra undervisningen (14/9 2020)</a></p>
+        </section>
+        
+        <!--Eksempel-->
+        <section class="section" id="sec7">
+            <h2 id="h2_7">Eksempelside:</h2>
+            <section id="t_7" class="text">  
+                <p id="text1">Det her et eksempel på noget enkelt HTML kode for en side, sådan som man ville sætte det op i en HTML fil. Kommentare beskriver hvad det forskellige kode er.</p>
+                <section class="img_section" id="eks">
+                    <img id="eksimg" src="Billeder/Webudvikling/html_eks.PNG" alt="Eksempel på HTML kode.">
+                    <p class="imgtext" id="texteks">Enkelt HTML kode til en side.</p>
+                </section>
+                <p id="text2">Siden var en af de første vi lavede i HTML på klassen, så nogle af kommentarerne er meget basiske, og alt koden står nok ikke helt optimalt.</p>
+                <button class="button" type="button">
+                    <div class="centerbutton"><p><a href="Hjemmesider/Ovelse%203.html" target="_blank">Se side</a></p></div>
+                </button>
+            </section>
+        </section>    
+            
+        <!--Refleksion-->
+        <section class="section" id="refleksion">
+            <h2 id="h2_r">Refleksion:</h2>
+            <p>Som med HTML, var jeg meget positivt overrasket over at jeg kunne følge så godt med, selvom jeg i dette tilfælde aldrig have brugt det før. Har dog flere problemer med det end HTML, specielt fordi jeg var syg da vi havde om det anden dag, så der er nogle af de ting, som float og clear, jeg stadig ikke helt ved hvordan fungere (fx: brugte jeg et par timer på at prøve at få noget tekst og et billede til at sidde ved siden af hinanden via float i mit Portfolio, for så at finde ud af at grunden til mit billede hoppede ned på næste linje var pga. at der ikke skulle en float på billedet). Der er også mange andre tags jeg ikke er helt sikker på hvordan fungere, men jeg har efterhånden lært så meget om dem at jeg nemmere kan søge mig frem til hvad jeg skal bruge.</p>
+        </section>
+            
+        </section>
+            <footer id="footer">
+                <p>&copy; Copyright Hanne Pedersen 2020</p>
+            </footer>
+            
+            <!-- Script for Bootstrap -->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>  
+        </div>
+    </body>
