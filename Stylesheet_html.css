@@ -1,0 +1,38 @@
+
+.section {
+    border-bottom: 5px solid #ffa94c;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+table {
+    margin-bottom: 10px;
+}
+
+#srbimg {
+    width: 100%;
+    height: auto;
+}
+
+#refleksion {
+    border-bottom-style: none;
+}
+
+/*Desktop*/
+@media screen and (min-width: 1920px) {
+
+    .img_section {
+        text-align: center;
+    }
+    #srb {
+        text-align: center;
+    }
+    
+    #srbimg {
+        width: 75%;
+        height: auto;  
+    }
+    
+}

@@ -1,0 +1,60 @@
+
+#refleksion {
+    border-top: 5px solid #ffa94c;
+    border-bottom-style: none;
+}
+
+#empimg, #intimg, #bsimg, #hiimg, #wf1img, #wf2img {
+    width: 100%;
+    height: auto;
+}
+
+.centerbutton{
+    text-align: center;
+    height: 35px;
+    width: 260px;
+    line-height: 35px;
+}
+
+/*Desktop*/
+@media screen and (min-width: 1920px) {
+    .img_section {
+        text-align: center;
+    }   
+
+    .quote {
+        text-align: center;
+    }
+    
+    #empimg, #bsimg, #wf1img, #wf2img {
+        width: 50%;
+        height: auto;
+    }
+    
+    #hiimg {
+        width: 35%;
+    }
+    
+    #intimg {
+        width: 55%;
+    }
+    
+    #int {
+        grid-area: int;
+        text-align: right;
+    }
+    
+    #define_text {
+        grid-area: dt;
+    }
+    
+    #t_3 {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "dt int"
+            "dt int";
+        
+    }
+    
+}
