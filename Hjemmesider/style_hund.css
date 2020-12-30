@@ -1,0 +1,39 @@
+body {
+    font-family: 'Amatic SC', cursive;
+    background-color: ghostwhite;
+}
+
+h1 {
+    font-size: 2em;
+    background-color: aquamarine;
+    padding: 0px 10px;
+    border: 10%; 
+}
+
+h2 {
+    margin-left: 5px;
+}
+
+p {
+    font-size: 1.3em;
+    margin: 5px;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+ul {
+    background-color: aquamarine;
+    padding: 25px;
+    font-size: 1.3em;
+}
+
+#link {
+    font-size: 1.3em;
+}
+
+.link {
+    font-size: 1.5em;
+}
+

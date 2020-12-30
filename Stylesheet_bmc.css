@@ -1,0 +1,113 @@
+
+.section {
+    border-bottom: 5px solid #ffa94c;
+}
+
+#sec2 {
+    border-bottom-style: none;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+#bmcimg, #mcdimg {
+    width: 100%;
+    height: auto;
+}
+
+#ks, #vt, #kn, #kr, #is, #nr, #na, #np {
+    border-bottom: 5px dashed #ffa94c;
+}
+
+#os {
+    border-bottom: 5px solid #ffa94c;
+}
+
+#refleksion {
+    border-bottom-style: none;
+}
+
+/*Desktop*/
+@media screen and (min-width: 1920px) {
+    
+    #np, #na, #nr, #vt, #kr, #kn, #ks, #os, #is {
+    border: 2.5px solid #ffa94c;
+    }
+    
+    #np {
+        grid-area: np;
+    }
+    
+    #na {
+        grid-area: na;
+    }
+    
+    #nr {
+        grid-area: nr;
+    }
+    
+    #vt {
+        grid-area: vt;
+    }
+    
+    #kr {
+        grid-area: kr;
+    }
+    
+    #kn {
+        grid-area: kn;
+    }
+    
+    #ks {
+        grid-area: ks;
+    }
+    
+    #os {
+        grid-area: os;
+        border-bottom: 5px solid #ffa94c; 
+    }
+    
+    #is {
+        grid-area: is;
+        border-bottom: 5px solid #ffa94c;
+    }
+    
+    #bmcgrid p {
+        font-size: 16px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    #bmcgrid li {
+        font-size: 16px;
+        margin-left: -10px;
+        margin-right: 5px;
+    }
+    
+    #bmcgrid h3 {
+        margin-left: 5px;
+        margin-right: 5px;
+        text-align: center;
+    }
+    
+    #bmcgrid {
+        display: grid;
+        grid-template-columns: 1fr 1.75fr 0.50fr 0.50fr 1.75fr 1fr;
+        grid-template-rows: 1fr 0.75fr 0.75fr;
+        grid-template-areas: 
+            "np na vt vt kr ks"
+            "np nr vt vt kn ks"
+            "os os os is is is";
+    }
+    
+    #mcd {
+        text-align: center;
+    }
+    
+    #mcdimg {
+        width: 60%;
+        height: auto;
+    }
+
+}

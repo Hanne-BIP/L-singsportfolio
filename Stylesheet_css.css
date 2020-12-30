@@ -11,11 +11,6 @@ table {
     margin-bottom: 10px;
 }
 
-#picimg, #eksimg, #absimg {
-    width: 100%;
-    height: auto;
-}
-
 #refleksion {
     border-bottom-style: none;
 }
@@ -27,40 +22,53 @@ table {
         text-align: center;
     }
     
-    #absimg {
-        width: 75%;
-        height: auto;  
-    }
-    
-    #picimg {
-        width: 50%;
-        height: auto;
-    }
-    
-    /*Eksempel*/
+    /*Selectors*/
     #eksimg {
         width: 65%;
         height: auto;
     }
     
-    #eks {
-        grid-area: eks;
+    #h3_1 {
+        grid-area: h3_1;
     }
     
-    #text1 {
-        grid-area: t1;
+    #h3_2 {
+        grid-area: h3_2;
     }
     
-    #text2 {
-        grid-area: t2;
+    #ds {
+        grid-area: ds;
     }
     
-    #t_7 {
+    #ps {
+        grid-area: ps;
+    }
+    
+    #s_intro {
+        grid-area: intro;
+    }
+    
+    #ss {
+        grid-area: ss;
+    }
+    
+    #ps_text {
+        grid-area: ps_text;
+    }
+    
+    #button {
+        grid-area: button;
+    }
+    
+    #sekundær {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        /*grid-template-columns: 1fr 2fr;*/
         grid-template-areas: 
-            "t1 eks"
-            "t2 eks"
+            "intro intro"
+            "h3_1 ."
+            "ss ds"
+            "h3_2 ."
+            "ps_text ps"
             "button .";
     }
     

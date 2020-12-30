@@ -1,0 +1,16 @@
+body {
+    font-size: 18px;
+}
+
+img {
+    width: 15%;
+}
+
+#side1 {
+   float: right;
+}
+
+#side2 {
+    float: left;
+    margin-right: 10px;
+}

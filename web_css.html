@@ -66,7 +66,7 @@
                             <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Ophavsret og licens</a>
                             <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Business Model Canvas</a>
+                        <a class="dropdown-item" href="kom_bmc.html">Business Model Canvas</a>
                     </div>
                   </li>
                 <!--Webudvikling--> 
@@ -79,7 +79,7 @@
                             <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Grid og responsive design</a>
                             <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Versionsstyring</a>
+                        <a class="dropdown-item" href="web_versionsstyring.html">Versionsstyring</a>
                             <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">HTML og CSS workshop</a>
                             <div class="dropdown-divider"></div>
@@ -261,22 +261,26 @@
                         <p>Flere elementer man vil style ens. Det mærkes med en unik klasse (&#60;tag class=”class”&#62;). I CSS stylesheetet skrives navnet på klassen med et punktum foran (.class &#123; &#125;).</p>   
                     </section>
                     <section id="sekundær">
-                        <p>Der er også andre former for selectors der er for noget mere specifikt:</p>
-                        <h3>Strukturelle selectors:</h3>
-                        <p>Også kaldet combinator operators. Det beskriver hierarkiet mellem de forskellige selectors, fx: "Descendant selectors". <br>Det er en type af selectors hvor det er et specifikt element i selectoren man vil style, så den altså er en decendant af selectoren. De kan bruges i stedet for class selectoren hvis det alle er samme elementer i selectoren der skal styles ens.
-                        <br><b>Fx:</b> på billedet er der en descendant selector på de links i mine knapper der styler texten hvid og placerer teksten i midten:</p>
+                        <p id="s_intro">Der er også andre former for selectors der er for noget mere specifikt:</p>
+                        <h3 id="h3_1">Strukturelle selectors:</h3>
+                        <section id="ss">
+                            <p>Også kaldet combinator operators. Det beskriver hierarkiet mellem de forskellige selectors, fx: "Descendant selectors". <br>Det er en type af selectors hvor det er et specifikt element i selectoren man vil style, så den altså er en decendant af selectoren. De kan bruges i stedet for class selectoren hvis det alle er samme elementer i selectoren der skal styles ens.
+                            <br><b>Fx:</b> på billedet er der en descendant selector på de links i mine knapper der styler texten hvid og placerer teksten i midten:</p>
+                        </section>
                         <section class="img_section" id="ds">
                             <img id="dsimg" src="Billeder/Webudvikling/css_descendant.PNG" alt="Decendant selectors.">
                             <p class="imgtext" id="textds">Descendant selectors som vist på en knap.</p>
                         </section>
-                        <h3>Pseudo selectors:</h3>
-                        <p>Pseudo selectors er når det er et specifikt stadie af elementet der skal styles. De skrives i ens CSS stylesheet ved at sætte et colon efter ens selector og så skrive navnet på stadiet. 
-                        <br><b>Fx:</b> på billedet er en pseudo selector på mine knapper når man har cursoren over dem, så bliver farven stylet til en orange i stedet for blå.</p>
+                        <h3 id="h3_2">Pseudo selectors:</h3>
+                        <section id="ps_text">
+                            <p>Pseudo selectors er når det er et specifikt stadie af elementet der skal styles. De skrives i ens CSS stylesheet ved at sætte et colon efter ens selector og så skrive navnet på stadiet. 
+                            <br><b>Fx:</b> på billedet er en pseudo selector på mine knapper når man har cursoren over dem, så bliver farven stylet til en orange i stedet for blå.</p>
+                        </section>    
                         <section class="img_section" id="ps">
                             <img id="psimg" src="Billeder/Webudvikling/css_pseudo.PNG" alt="Pseudo selectors.">
                             <p class="imgtext" id="textps">Pseudo selectors som vist på en knap.</p>
                         </section>
-                        <button class="button" type="button">
+                        <button class="button" id="button" type="button">
                         <div class="centerbutton"><p><a href="#">Prøveknap</a></p></div>
                         </button>
                     </section>
@@ -303,66 +307,35 @@
             </section> 
             <p class="source">Kilde: <a href="https://eadania.mrooms.net/course/view.php?id=2649#section-5">PowerPoint fra undervisningen (14/9 2020)</a></p>
         </section>
-        
-        <!--Farver og skrifttyper-->
-        <!--<section class="section" id="sec5">
-            <h2 id="h2_5">Farver og skrifttyper:</h2>
+            
+        <!--Positionering-->
+        <section class="section" id="sec5">
+            <h2 id="h2_5">Positionering:</h2>
             <section id="t_5" class="text"> 
-                <section id="t_51" class=text>
-                    <h3>Farver:</h3>
-                    <p>Farver kan skrives på 3 forskellige måder i CSS:</p>
+                <p>En standard side ville have layout sat op i flow (elementer placeret fra top til bund efter hinanden). Man kan bruge forskellig syntaks til at sætte sit layout op på andre måder:</p>
                     <ul>
-                        <li><b>RBG:</b> står for rød grøn blå. Skrives som (r, g, b). Hvis man vil ændre opaciteten på farven, skal man skrive (r, g, b, o%).</li>
-                        <li><b>HEX-kode:</b> står for hexidecimal. Her sættes hex-koden bare ind.</li>
-                        <li><b>HSL:</b> står for hue saturation lightness. Skrives som (h%, s%, l%). Hvis man vil ændre opaciteten på farven, skal man skrive (h%,s%,l%,o%)</li>
+                        <li><b>Relative:</b> Elementerne forskydes i forhold til deres startposition ud fra en definition. Vil følge flow.
+                        <br><p class="source">Kilde: <a href="https://www.w3schools.com/css/css_positioning.asp">w3schools (30/11 2020)</a></p></li>
+                        <li><b>Absolute:</b> Elementerne har en fast, defineret placering på siden (altså at den ikke følger med når man scroller). Vil ikke følge flow.
+                        <br><p class="source">Kilde: <a href="https://www.w3schools.com/css/css_positioning.asp">w3schools (30/11 2020)</a></p></li>
+                        <li><b>Fixed:</b> Elementerne har en fast, defineret placering på skærmen (altså, at den følger også med når man scroller). Vil ikke følge flow.
+                        <br><p class="source">Kilde: <a href="https://www.w3schools.com/css/css_positioning.asp">w3schools (30/11 2020)</a></p></li>
+                        <li><b>Float:</b> Elementer flyder uden om andre elementer, så de kan placeres lige ved siden af hinanden. Følger ikke flow.
+                        <br><p class="source">Kilde: <a href="https://www.w3schools.com/css/css_float.asp">w3schools (30/11 2020)</a></p></li>
+                        <li><b>Clear:</b> Elementer afgrænses så andre elementer ikke rører ved det. Bruges til at ophæve floats.
+                        <br><p class="source">Kilde: <a href="https://www.w3schools.com/cssref/pr_class_clear.asp">w3schools (30/11 2020)</a></p></li>
                     </ul>
-                    <h3>Skrifttyper:</h3>
-                    
-                </section>
-                <section id="t_52" class=text>
-                    <h3>Absolut adressering:</h3>
-                    <p>Hvor adresseringen ikke går ud fra hvor man er i link-kæden.</p>
-                    <section class="img_section" id="abs">
-                        <img id="absimg" src="Billeder/Webudvikling/html_abs.PNG" alt="Absolut adressering af links.">
-                        <p class="imgtext" id="textabs">Absolut adressering af links i HTML.</p>
-                    </section>
-                    <ul>
-                        <li><p>Man skriver hele adressen, altså: &#60;a href= “http:/link.dk”&#60;tekst som bliver link &#60;/a&#62;</p></li>
-                    </ul> 
-                </section>
-            <p class="source">Kilde: <a href="https://eadania.mrooms.net/course/view.php?id=2649#section-5">PowerPoint fra undervisningen (14/9 2020)</a></p>
             </section>
-        </section>-->
-    
-        <!--Billeder-->
-        <section class="section" id="sec6">
-            <h2 id="h2_6">Billeder:</h2>
-            <section id="t_6" class="text">  
-                <p>Man bruger &#60;img&#62; tag til billeder, med en <i>src</i> attribut. 
-                <br>Man kan angive en højde og bredde på billederne i CSS, selvom det dog er bedst at have ændret billedets størrelse inden man sætter det ind i ens HTML.</p>
-                <section class="img_section" id="pic">
-                        <img id="picimg" src="Billeder/Webudvikling/html_pic.PNG" alt="Indsætning af billede.">
-                        <p class="imgtext" id="textpic">Indsætning af billede i HTML.</p>
-                    </section>
-            </section>
-            <p class="source">Kilde: <a href="https://eadania.mrooms.net/course/view.php?id=2649#section-5">PowerPoint fra undervisningen (14/9 2020)</a></p>
         </section>
-        
-        <!--Eksempel-->
-        <section class="section" id="sec7">
-            <h2 id="h2_7">Eksempelside:</h2>
-            <section id="t_7" class="text">  
-                <p id="text1">Det her et eksempel på noget enkelt HTML kode for en side, sådan som man ville sætte det op i en HTML fil. Kommentare beskriver hvad det forskellige kode er.</p>
-                <section class="img_section" id="eks">
-                    <img id="eksimg" src="Billeder/Webudvikling/html_eks.PNG" alt="Eksempel på HTML kode.">
-                    <p class="imgtext" id="texteks">Enkelt HTML kode til en side.</p>
-                </section>
-                <p id="text2">Siden var en af de første vi lavede i HTML på klassen, så nogle af kommentarerne er meget basiske, og alt koden står nok ikke helt optimalt.</p>
-                <button class="button" type="button">
-                    <div class="centerbutton"><p><a href="Hjemmesider/Ovelse%203.html" target="_blank">Se side</a></p></div>
-                </button>
+    
+        <!--Øvelse-->
+        <section class="section" id="sec6">
+            <h2 id="h2_6">Øvelse:</h2>
+            <section id="t_6" class="text">  
+                <p>I denne her opgave skulle man tage en hjemmeside vi havde lavet i forvejen i en af de andre timer, og så style det på to forskellige måder via CSS. Og så skulle vi lave en side der forklarede om hvad for noget CSS vi havde brugt. Jeg tog udgangspunkt i forsiden til den hundehjemmeside vi havde lavet.</p>
+                <p><a href="Hjemmesider/index.html">Se hundehjemmeside.</a></p>
             </section>
-        </section>    
+        </section>
             
         <!--Refleksion-->
         <section class="section" id="refleksion">
