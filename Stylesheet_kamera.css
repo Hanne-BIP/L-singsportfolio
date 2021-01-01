@@ -1,0 +1,324 @@
+
+.section {
+    border-bottom: 5px solid #ffa94c;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Petrona', serif;
+}
+
+#camimg, #lukimg, #langimg, #blæimg {
+    width: 100%;
+}
+
+#sec4 img {
+    width: 100%;
+}
+
+#objektiv, #brændvidde, #lukker, #lukkertid, #blænde, #dybdeskarphed, #ø_eks, #ø_bd, #ø_luk {
+    border-bottom: 5px dashed #ffa94c;
+}
+
+#refleksion {
+    border-bottom-style: none;
+}
+
+/*Desktop*/
+@media screen and (min-width: 1920px) {
+    .img_section {
+        text-align: center;
+    }
+    
+    #sec4 img {
+        width: 98%;
+    }
+    
+    /*Kamera*/
+    #cam {
+        grid-area: cam;
+    }
+    
+    #t1 {
+        grid-area: t1;
+    }
+    
+    #t2 {
+        grid-area: t2;
+    }
+    
+    #t_1 {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+            "t1 cam"
+            "t2 cam";
+    }
+    
+    /*Begreber*/
+    #objektiv, #brændvidde, #lukker, #lukkertid, #blænde, #dybdeskarphed {
+        border-bottom: none;
+    }
+    
+    #objektiv {
+        grid-area: obj;
+        border-right: 2.5px dashed #ffa94c;
+        border-bottom: 2.5px dashed #ffa94c;
+    }
+    
+    #brændvidde {
+        grid-area: bræ;
+        border-right: 2.5px dashed #ffa94c;
+        border-bottom: 2.5px dashed #ffa94c;
+        border-top: 2.5px dashed #ffa94c;
+    }
+    
+    #bræimg {
+        width: 75%;
+    }
+    
+    #lukker{
+        grid-area: luk;
+        border-left: 2.5px dashed #ffa94c;
+        border-bottom: 2.5px dashed #ffa94c;
+    }
+    
+    #h3 {
+        grid-area: h3;
+    }
+    
+    #luk_intro {
+        grid-area: l_intro;
+    }
+    
+    #luk {
+        grid-area: lukimg;
+        width: 70%;
+        text-align: center;
+    }
+    
+    #lukimg {
+        text-align: center;
+    }
+    
+    #langeks {
+        grid-area: langeks;
+    }
+    
+    #langimg {
+        width: 95%;
+    }
+    
+    #hureks {
+        grid-area: hureks;
+    }
+    
+    #hurimg {
+        width: 55%;
+    }
+    
+    #source_lukt {
+        grid-area: source;
+    }
+    
+    #lukkertid {
+        grid-area: lukt;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "h3 h3"
+            "l_intro l_intro"
+            "lukimg lukimg"
+            "langeks hureks"
+            "source source";
+        border-right: 2.5px dashed #ffa94c;
+        border-top: 2.5px dashed #ffa94c;
+    }
+    
+    #blænde {
+        grid-area: blæ;
+        border-left: 2.5px dashed #ffa94c;
+        border-bottom: 2.5px dashed #ffa94c;
+        border-top: 2.5px dashed #ffa94c;
+    }
+    
+    #blæimg {
+        width: 75%;
+    }
+    
+    #dybdeskarphed {
+        grid-area: dyb;
+        border-left: 2.5px dashed #ffa94c;
+        border-top: 2.5px dashed #ffa94c;
+    }
+    
+    #dyb_simg, #dyb_limg {
+        width: 75%;
+    }
+    
+    
+    #følsomhed {
+        grid-area: iso;
+        border-top: 5px dashed #ffa94c;
+    }
+    
+    #isointro {
+        grid-area: isointro;
+    }
+    
+    #iso {
+        grid-area: isoimg;
+    }
+    
+    #isoimg {
+       /*width: 40%;*/
+    }
+    
+    #begreber {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "obj luk"
+            "bræ blæ"            
+            "lukt dyb"
+            "iso iso";
+    }
+    
+    #isogrid {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-template-areas: 
+            "isointro isoimg";
+    }
+    
+    #lukker h3, #lukker p {
+        margin-left: 5px;
+    }
+    
+    #objektiv h3, #objektiv p {
+        margin-right: 5px;
+    }
+    
+    #blænde h3, #blænde p, #blænde img {
+        margin-left: 5px;
+    }
+    
+    #brændvidde h3, #brændvidde p, #brændvidde img {
+        margin-right: 5px;
+    }
+    
+    #dybdeskarphed h3, #dybdeskarphed p, #dybdeskarphed img {
+        margin-left: 5px;
+    }
+    
+    #lukkertid h3, #lukkertid p, #lukkertid img {
+        margin-right: 5px;
+    }
+    
+    /*Øvelse*/
+    .imgtext {
+        text-align: center;
+    }
+    
+    #eks1 {
+        grid-area: eks1;
+    }
+    
+    #eks2 {
+        grid-area: eks2;
+    }
+    
+    #eks3 {
+        grid-area: eks3;
+    }
+    
+    #mltext {
+        grid-area: mltext;
+    }
+    
+    #mørklys {
+        grid-area: ml;
+        display: grid;
+        grid-template-areas:
+            "mltext mltext"
+            "eks2 eks3";
+    }
+    
+    #eks4 {
+        grid-area: eks4;
+    }
+    
+    #eks5 {
+        grid-area: eks5;
+    }
+    
+    #outro1 {
+        grid-area: outro;
+    }
+    
+    #eks6 {
+        grid-area: eks6;
+    }
+    
+    #eks7 {
+        grid-area: eks7;
+    }
+    
+    #eksgrid {
+        display: grid;
+        grid-template-areas:
+            "eks1 ."
+            "ml ml"
+            "eks4 eks5"
+            "outro outro"
+            "eks6 eks7";
+    }
+    
+    #bd1 {
+        grid-area: bd1;
+    }
+    
+    #bd2 {
+        grid-area: bd2;
+    }
+    
+    #bdgrid {
+        display: grid;
+        grid-template-areas:
+            "bd1 bd2";
+    }
+    
+    #lu1 {
+        grid-area: lu1;
+    }
+    
+    #lu2 {
+        grid-area: lu2;
+    }
+    
+    #lukgrid {
+        display: grid;
+        grid-template-areas:
+            "lu1 lu2";
+    }
+    
+    #bv1 {
+        grid-area: bv1;
+    }
+    
+    #bv2 {
+        grid-area: bv2;
+    }
+    
+    #brægrid {
+        display: grid;
+        grid-template-areas:
+            "bv1 bv2";
+    }
+    
+}
