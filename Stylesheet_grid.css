@@ -1,0 +1,105 @@
+
+.section {
+    border-bottom: 5px solid #ffa94c;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+#rbimg, #stimg, #flimg, #reimg, #adimg, #re_øimg{
+    width: 100%;
+}
+
+#static, #fluid, #responsive {
+    border-bottom: 5px dashed #ffa94c;
+}
+
+#refleksion {
+    border-bottom-style: none;
+}
+
+/*Desktop*/
+@media screen and (min-width: 1920px) {
+
+    .img_section {
+        text-align: center;
+    }
+    
+    #rbimg {
+        width: 75%;
+    }
+    
+    /*Layoutstrategier*/
+    #static, #fluid, #responsive {
+        border-bottom: none;
+    }
+    
+    #static {
+        grid-area: st;
+        border-right: 2.5px dashed #ffa94c;
+        border-bottom: 2.5px dashed #ffa94c;
+    }
+    
+    #fluid {
+        grid-area: fl;
+        border-left: 2.5px dashed #ffa94c;
+        border-bottom: 2.5px dashed #ffa94c;
+    }
+    
+    #responsive {
+        grid-area: re;
+        border-right: 2.5px dashed #ffa94c;
+        border-top: 2.5px dashed #ffa94c;
+    }
+    
+    #adaptive {
+        grid-area: ad;
+        border-left: 2.5px dashed #ffa94c;
+        border-top: 2.5px dashed #ffa94c;
+    }
+    
+    #stimg, #static h3, #static p, #reimg, #responsive h3, #responsive p {
+        margin-right: 5px;
+    }
+    
+    #flimg, #fluid h3, #fluid p, #adimg, #adaptive h3, #adaptive p {
+        margin-left: 5px;
+    }
+    
+    #stimg, #flimg, #reimg, #adimg {
+        width: 85%;
+    }
+    
+    #layout {
+        display: grid;
+        grid-template-areas:
+            "st fl"
+            "re ad";
+    }
+    
+    /*Designstrategier*/
+    #intro {
+        grid-area: intro;
+    }
+    
+    #mobil {
+        grid-area: mobil;
+    }
+    
+    #pc {
+        grid-area: pc;
+    }
+    
+    #t_4 {
+        display: grid;
+        grid-template-areas:
+            "intro intro"
+            "mobil pc";
+    }
+    
+    #re_øimg {
+        width: 75%;
+    }
+    
+}

@@ -1,0 +1,293 @@
+
+body {
+    font-family: serif;
+    background-color: #fff;
+    margin: 0.5em;
+    color: #000;
+}
+
+header {
+    grid-area: head;
+    background-color: black;
+    padding: 0.2em;
+    /*margin-bottom: 0.5em;*/
+    color: #fff;
+    text-align: center;
+}
+
+nav {
+    grid-area: nav;
+    background-color: darkseagreen;
+    padding: 0.2em;
+    /*margin-bottom: 0.5em;*/
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul {
+    text-align: left;
+    font-size: 1.1em; 
+    margin-left: -2em;
+    display: inline;
+    vertical-align: middle; 
+}
+
+#menu li {
+    border-style: double;
+    border-color: seagreen;
+    background-color: seagreen;
+    color: white;
+    display: block;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+li a: hover {
+    background-color: white;
+}
+
+a {
+    color: white;
+}
+
+
+a:link {
+    color: white;
+}
+
+a:hover {
+   /* background-color: white;*/
+    color: black;
+    border-color: white;
+    font-style: oblique;
+}
+
+a:active {
+    background-color: white;
+    border-color: black;
+    color: black;
+}
+
+.uo {
+    font-size: 1.2em;
+    margin-left: 5px;
+}
+
+#artikel h2{
+    margin-left: 5px;
+}
+
+#artikel {
+    grid-area: a;
+    /*background-color: #0ff;*/
+    padding: 0.2em;
+    /*margin-bottom: 0.5em;*/
+    font-size: 1.0em;
+    background-image: url(Paper.jpg);
+    background-repeat:  none;
+}
+
+#galleri {
+    grid-area: g;
+    background-color: #274e13;
+    color: #fff;
+    /*margin-bottom: 0.5em;*/
+}
+
+#nokke {
+    width: 100%;
+    height: auto;
+   /* padding-left: 25%; */
+}
+
+#fakta {
+    grid-area: f;
+    background-color: #274e13;
+    color: #fff;
+    padding: 0.2em;
+    /*margin-bottom: 0.5em;*/
+    font-size: 1.3em;
+}
+
+#fakta li{
+    margin-bottom: 10px;
+}
+
+#myte h2{
+    margin-bottom: -10px;
+}
+
+#myte {
+    grid-area: m;
+    background-color: darkseagreen;
+    padding: 0.2em;
+    /*margin-bottom: 0.5em;*/
+    font-size: 1.3em;
+    color: white;
+}
+
+#myte li{
+    margin-bottom: 10px;
+}
+
+#ref h2{
+    margin-bottom: -10px;
+}
+
+#ref {
+    grid-area: r;
+    background-color: #274e13;
+    padding: 0.2em;
+    /*margin-bottom: 0.5em;*/
+    font-size: 1.3em;
+    color: white;
+}
+
+footer {
+    grid-area: foot;
+    font-size: 0.8em;
+    text-align: center;
+    background-color: black;
+    color: #aaa;
+    padding: 0.1em;
+}
+
+@media screen and (min-width: 800px) {
+    #pagewrap {
+        display: grid;
+        /*grid-gap: 5px; */
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr 5fr 2fr 1fr 3fr 1fr;
+        grid-template-areas:
+            "head head"
+            "nav nav"
+            "f a"
+            "m a"
+            "m a"
+            "r g"
+            "foot foot";
+    }
+    
+    #menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /*justify-content: flex-end;*/
+    }
+    
+    #li nokken {
+        grid-column: 1 / 2;
+        
+    }
+    
+    #li huldre {
+        grid-column: 2 / 3;
+    }
+    
+    #li mareridt {
+        grid-column: 3 / 4;
+    }
+    
+    /*#menu {
+        width: auto;
+    }*/
+    
+    #menu li {
+        display: inline;
+        padding: 5px;
+        margin-bottom: 5px;
+        vertical-align: middle;
+        margin: 2px;
+        text-align: center;
+    }
+    
+    /*#menu nøkken {
+        display: inline-block;
+    }*/
+    
+    .uo {
+        font-size: 1.5em;
+    }
+    
+    #artikel {
+        font-size: 1.2em;
+    }
+    
+    #artikel h2{
+        text-align: center;
+        font-size: 1.8em;
+    }
+    
+     #artikel p {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+    #fakta li {
+        margin-left: -10px;
+        margin-right: 15px;
+        font-size: 0.97em;
+        margin-top:
+}
+
+#nokke {
+    vertical-align: middle;
+    height: auto;
+}
+
+    
+@media screen and (min-width: 1000px) {
+    #pagewrap {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: 2fr 1fr 3fr 6fr 2fr 1fr;
+        grid-template-areas: 
+            "head head"
+            "nav nav"
+            "g f"
+            "a a"
+            "m r"
+            "foot foot";
+        }
+    
+    #menu li {
+        display: grid;  
+        display: inline;
+        vertical-align: middle;
+        grid-template-columns: 1fr 3fr 1fr;       
+      /*  grid-gap: 10px; */
+    }
+    
+    #artikel h2 {
+        font-size: 3em;
+        text-align: center;
+        margin-bottom: -10px;
+        margin-top: 10px;
+    }
+    
+    #artikel p{
+        font-size: 1.1em;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    #galleri img{
+        align-content: center;
+    }
+    
+    #fakta h2{
+        text-align: center;
+    }
+    
+    #fakta {
+        font-size: 1.3em;
+    }
+    
+    #myte {
+        font-size: 1.3em;
+    }
+    
+    #ref {
+        font-size: 1.3em;
+    }
+}
