@@ -2,12 +2,12 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Projekter - FN's 17 verdensmål</title>
+        <title>Webudvikling - Server-side scripting</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Petrona:wght@700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
         <link rel="stylesheet" href=Stylesheet_layout.css>
-        <link rel="stylesheet" href="Stylesheet_FN.css">
+        <link rel="stylesheet" href="Stylesheet_serverside.css">
         <link rel="stylesheet" href="menu.css">
     </head>
     
@@ -15,7 +15,7 @@
         <div id="grid">
             
             <header>
-                <h1 id="headline_header">FN's 17 verdensmål</h1>
+                <h1 id="headline_header">Server-side scripting</h1>
             </header>
             
                         <!-- Bootstrap Navbar -->
@@ -119,87 +119,123 @@
         <section class="section" id="sec1">
             <h2 id="h2_1">Introduktion:</h2>
             <section id="t_1" class="text">
-                <p>Fra d. 5/10 2020 til d.  9/10 2020 havde vi et projekt om FN’s 17 verdensmål, hvor vi skulle lave en idé til en app der hjalp med en af verdens målene.</p>
+                <p>Server-side er den del af websiden der har med koden og serveren at gøre, altså programmer som apache (den vi bruger). Programmet tager filerne og sender det ud til brugeren.
+                <br>Det man laver kan sammenlignes med opskrifter (det er ikke lavet i forvejen, men man ved hvordan det skal laves), så siden “bygges” som klienten skal bruge det.
+                <br><b>Fx:</b> kan man få en side med præcist det tidspunkt det er som klienten går ind på siden, eller en profil med ens egne informationer der bliver opdateret som man udfylder den.
+                <br>Når siden hentes ned fra serveren er det via browseren (i den her sammenhæng kaldet client-side) er der snakker med server-side programmerne via HTML.</p>
             </section>
+            <p class="source">Kilde: <a href="https://eadania.mrooms.net/course/view.php?id=2649#section-19" target="_blank">Modul om server-side scripting (NIOS 19/10 2020)</a></p>
         </section>   
             
-        <!--Empathize-->    
+        <!--PHP-->    
         <section class="section" id="sec2">
-            <h3 id="h3_2">Empathize:</h3>
+            <h2 id="h2_2">PHP:</h2>
             <section id="t_2" class="text">
-                <p>I empathize fasen undersøgte vi de forskellige verdensmål, hvorefter vi sorterede nogle fra ud fra hvilken emne vi ville have om til vi sidst havde et verdensmål som vi ville arbejde med, ansvarligt forbrug:</p>
-                <section class="img_section" id="emp">
-                    <img id="empimg" src="Billeder/Projekter/FN%20-%20Empathize.jpg" alt="Billede af tavle med notater.">
-                    <p class="imgtext" id="textemp">Noter ned om hvordan vi ville gribe emnet 'Ansvarligt forbrug' an.</p>
-                </section>
-            </section>  
+                <p>PHP står i dag for PHP Hypertext Preprocessor (stod oprindeligt for Personal Home Page). Det er det programmeringssprog man bruger til at lave server-sides. Det indeholder elementer fra Java, Pearl, C++, og har også helt nye elementer.</p> 
+                <p>Med PHP kan man:</p>
+                <ul>
+                    <li>indsætte præcise data, fx: dato og personlig information.</li>
+                    <li>modtage og bearbejde information fra formularer.</li>
+                    <li>bestemme hvilke sider der skal vises, fx: gøre så kun en admin kan se admin-sider.</li>
+                    <li>kan indsætte dele af en kode og kun bruge det.</li>
+                    <li>læse databaser og gemme information på dem, fx: bruger kodeord og navn.</li>
+                    <li>håndtere aktuel data fra sessioner.</li>
+                    <li>håndtere data der skal uploades, fx: forskellige filer og billeder.</li>
+                    <li>foretage simpel billedbehandling, fx: farveændring.</li>
+                    <li>læse og skrive filer direkte på serveren.</li>
+                </ul>
+            </section>   
+            <p class="source">Kilde: <a href="https://eadania.mrooms.net/course/view.php?id=2649#section-19" target="_blank">Modul om server-side scripting (NIOS 19/10 2020)</a></p>
         </section>
             
-        <!--Define-->    
+        <!--Tags-->    
         <section class="section" id="sec3">
-            <h3 id="h3_3">Define:</h3>
+            <h2 id="h2_3">Tags:</h2>
                 <section id="t_3" class="text">
-                    <section id="define_text">
-                        <p>I define fasen lavede vi en problemformulering som var:</p>
-                        <p class="quote">“<i>Økologiske varer udgjorde 11,6 pct. af det samlede salg til foodservice i 2019 mod 10,9 pct. i 2018. Det svarer omtrent til økologiske varers andel af detailomsætningen. I gennemsnit bruger en dansk husstand 3.200 kr. om året på økologiske føde- og drikkevarer. Beløbet svarer til 7,7 pct. af det samlede årlige forbrug på føde- og drikkevarer.</i>”</p>
-                        <p>Derefter gik vi ud og interviewede folk i byen for at spørge dem om deres forbrugervaner. Vi lavede en outline vi kunne gå ud fra når vi skulle interviewe:</p>
+                    <p>De PHP tags man ser mest i dag er:</p>
+                    <section id="PHP tabel">
+                    <table>
+                        <tr>
+                            <th>Navn:</th>
+                            <th>Hvad det gør:</th>
+                            <th>Tags:</th>
+                        </tr>
+                        <tr>
+                            <th>PHP:</th>
+                            <td>Viser at koden inde i taget skal ses som PHP.</td>
+                            <td><p> &#60;?php ?&#62;</p></td>
+                        </tr>
+                        <tr>
+                            <th>Echo:</th>
+                            <td>Viser at det inde i echo skal ud i HTML dokumentet.</td>
+                            <td>echo "html kode";</td>
+                        </tr>
+                        <tr>
+                            <th>Phpinfo:</th>
+                            <td>Giver info omkring php’en i dokumentet.</td>
+                            <td>phpinfo();</td>
+                        </tr>
+                        <tr>
+                            <th>Kommentarer:</th>
+                            <td>Kommentarer til koden der ikke vises på siden.</td>
+                            <td>//</td>
+                        </tr>
+                        <tr>
+                            <th>Include:</th>
+                            <td>Indsætter en separat inc-fil i php.</td>
+                            <td>include(“filnavn”);</td>
+                        </tr>
+                    </table>    
+                </section> 
+                    <p>Fordelen ved include, er at man kan rette i den ene fil separat, og så vil alle filer der har den include også ændre sig.</p>
+                    
+                    <p>Hvis man bruger PHP i sit dokument, skal man ændre filtypen til .php, ellers virker det ikke. Dog, hvis man ikke har et program på sin pc til at åbne PHP filer med, skal man lægge dem ind på en server og erstatte rettelser der, for at de kan åbnes. Hvis man bruger serveren, skal man huske at kontrollere at det er den rigtige fil man bruger, da det hele tiden skal opdateres.</p>
+                </section>
+            <p class="source">Kilde: <a href="https://eadania.mrooms.net/course/view.php?id=2649#section-19" target="_blank">Modul om server-side scripting (NIOS 19/10 2020)</a></p>
+        </section>
+        
+        <!--Require og include-->
+        <section class="section" id="sec4">
+            <h2 id="h2_4">Require og include:</h2>
+            <section id="t_4" class="text"> 
+                <p>I en øvelse skulle jeg skrive hvad forskellen på server-side og client-side var, hvad include og require betyder, og hvad forskellen er på dem, samt hvad once betyder:</p>
+                <section id="øv">
+                    <section id="øv1">
+                        <h3>Server-side/Client-side:</h3>
+                        <p>Forskellen mellem server-sides og client-sides er server-siden er det program der laver hjemmesiden fra en server, som client-siden så viser på brugerens computer.</p>
+                        <p class="source">Kilde: <a href="https://techdifferences.com/difference-between-server-side-scripting-and-client-side-scripting.html">Techdifferences (21/10 2020)</a></p>
+                        <h3>Include/require:</h3>
+                        <p>Include/require i PHP gør at man kan indsætte kode fra et eksternt dokument, så det hele ikke behøver at være i samme dokument. Det kan være en fordel hvis man har et element på mange sider som man skal rette meget i, fx: en menu eller ordreside.</p>
+                        <p>De to funktioner minder meget om hinanden, men hvis man har brugt require og PHP scriptet ikke kan finde det eksterne dokument, vil scriptet ikke køre, i modsætning til hvis man bruger include.</p>
+                        <p class="source">Kilde: <a href="https://www.w3schools.com/php/php_includes.asp" target="_blank">w3schools (20/10 2020)</a></p>
                     </section>
-                    <section class="img_section" id="int">
-                        <img id="intimg" src="Billeder/Projekter/FN%20-%20Interview.jpg" alt="Billede af tavle med outline for interview.">
-                        <p class="imgtext" id="textint">Outline af hvad vi ville komme ind på i interviews.</p>
+                    <section id="øv1">
+                        <h3>Inluce_once/require_once:</h3>
+                        <p>require_once() og include_once() bruges hvis den eksterne fil skal kaldes i dokumentet mere end én gang (den ignorer filen hvis den allerede er kaldt i scriptet). Hvis scriptet ikke kan finde filen, vil der komme en fejlbesked (hvis man bruger require), eller scriptet vil køre videre uden filens script (hvis man bruger include).</p>
+                        <p class="source">Kilde: <a href="https://www.w3schools.com/php/php_includes.asp" target="_blank">w3schools (20/10 2020)</a></p>
                     </section>
                 </section>
+            </section>   
         </section>
         
-        <!--Ideate-->    
-        <section class="section" id="sec4">
-            <h3 id="h3_4">Ideate:</h3>
-            <section id="t_4" class="text">
-                <p>I ideate fasen startede vi med at lave en brainstorm over idéer til apps:</p>
-                    <section class="img_section" id="bs">
-                        <img id="bsimg" src="Billeder/Projekter/FN%20-%20Brainstorm.jpg" alt="Brainstorm.">
-                        <p class="imgtext" id="textbs">Den brainstorm vi lavede over app-idéer.</p>
-                    </section>
-                <p>Så inddelte dem i overordnede kategorier for at se om de kunne kombineres til en samlet app:</p>
-                    <section class="img_section" id="hi">
-                        <img id="hiimg" src="Billeder/Projekter/FN%20-%20Hovedide.jpg" alt="Hovedidé.">
-                        <p class="imgtext" id="texthi">Hovedidéen vi lavede ud fra brainstormen.</p>
-                    </section>
-                <p>Her er en kort beskrivelse af appen:</p>
-                <p class="quote">"<i>App hvor du kan taste ind hvad du skal købe og så viser den dig de billigste økologiske muligheder.</i>"</p>
-            </section>
-        </section>
-            
-        <!--Prototype-->
+        <!--Øvelse-->
         <section class="section" id="sec5">
-            <h3 id="h3_5">Prototype:</h3>
-            <section id="t_5" class="text">  
-                <p>I prototype fasen lavede vi wireframes af de forskellige sider til appen:</p>
-                    <section class="img_section" id="wf1">
-                        <img id="wf1img" src="Billeder/Projekter/FN%20-%20Wireframes1.jpg" alt="Wireframes af appen.">
-                        <p class="imgtext" id="textwf1">De første wireframes vi lavede.</p>
-                    </section>
-            </section>
-        </section>
-    
-        <!--Test-->
-        <section class="section" id="sec6">
-            <h3 id="h3_6">Test:</h3>
-            <section id="t_6" class="text">  
-                <p>I test fasen testede vi vores wireframes på andre elever og rettede dem til efter den kritik vi fik, som manglende sider om at gøre nogle elementer tydligere:</p>
-                    <section class="img_section" id="wf2">
-                        <img id="wf2img" src="Billeder/Projekter/FN%20-%20Wireframes2.jpg" alt="Opdaterede wireframes af appen.">
-                        <p class="imgtext" id="textwf2">De rettede wireframes.</p>
-                    </section>
-            </section>
-        </section>
-        
+            <h2 id="h2_5">Øvelse:</h2>
+            <section id="t_5" class="text"> 
+                <p>I en anden øvelse skulle jeg tilføje en footer til den side vi havde arbejdet med i undervisningen til alle PHP sider.</p>
+                <section class="img_section" id="foot">
+                    <img id="footimg" src="Billeder/Webudvikling/PHP%20-%20Footer.png" alt="Kode til footer.">
+                    <p class="imgtext" id="texfoot">Billede af koden til opgaven. HTML koden er til venstre, footeren til højre.</p>
+                </section>
+                <p><a href="http://10816.web.eadania.dk/PHP%20%C3%B8velse/side1.php" target="_blank">Se side.</a></p>
+            </section>   
+        </section>    
+            
         <!--Refleksion-->
         <section class="section" id="refleksion">
             <h2 id="h2_r">Refleksion:</h2>
-            <p>Dette projekt var det andet Design Thinking projekt vi havde, så det var først rigtigt nu det helt sad fast. Det hjalp at vi havde haft om det i forvejen så jeg kunne referer tilbage til det. Det var lidt af en udfordring at skulle interviewe mennesker, både fordi jeg ikke kan lide og forstyrre folk, men også fordi nogle af de folk der var de steder vi interviewede ikke havde tid til at blive interviewet.
-            <br>I det her projekt lærte vi at lave wireframes, hvilket gik meget fint, følte at det var noget jeg havde ret godt styr på (i hvert fald hvordan man tegner dem, hvordan layoutet skulle være var noget der skulle rettes lidt til).</p>
-        </section>    
+            <p>Umiddelbart synes jeg PHP virker til at være nogenlunde let at skrive ind og praktisk at bruge, men det at den hele tiden skal opdateres på en server gør at jeg ikke har så meget lyst til at bruge det (ved godt der er programmer man kan downloade så man ikke behøver at bruge servere, men fra hvad jeg har hørt fra de andre, giver det også problemer). Personligt vil jeg nok ikke komme til at bruge det så meget, med mindre det er til allersidst i et projekt så jeg slipper for at skulle opdaterer min side på serveren så meget.</p>
+        </section>
             
         </section>
             <footer id="footer">

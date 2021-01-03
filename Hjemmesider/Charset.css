@@ -1,0 +1,312 @@
+
+body {
+    font-family: serif;
+    background-color: #fff;
+    margin: 0.5em;
+    color: #000;
+    font-size: 1.1em;
+}
+
+header {
+    grid-area: head;
+    background-color: #7781f5;
+    padding: 0.2em;
+    /*margin-bottom: 0.5em;*/
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #7781f5;
+    padding: 0.2em;
+    /*margin-bottom: 0.5em;*/
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul {
+    text-align: left;
+    font-size: 1.1em; 
+    margin-left: -2em;
+    display: inline;
+    vertical-align: middle; 
+}
+
+#menu li {
+    border-style: solid;
+    border-color: black;
+    background-color: black;
+    color: white;
+    display: block;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+li a: hover {
+    background-color: white;
+}
+
+a {
+    color: white;
+}
+
+
+a:link {
+    color: white;
+}
+
+a:hover {
+   /* background-color: white;*/
+    color: #ddd;
+    border-color: white;
+    font-style: oblique;
+}
+
+a:active {
+    background-color: white;
+    border-color: black;
+    color: black;
+}
+
+.uo {
+    font-size: 1.2em;
+    margin-left: 5px;
+}
+
+#charset {
+    grid-area: c;
+    padding: 0.2em;
+    font-size: 1.1em;
+}
+
+#charset p {
+        margin-left: 10px;
+        margin-right: 10px;
+}
+
+#ASCII {
+    grid-area: ap;
+}
+
+#ascii {
+    width: 100%;
+    height: auto;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+/*
+#ASCII blockquote {
+    text-align: center;
+    font-size: 1.1em;
+}*/
+
+#tabelASCII {
+    font-size: 1.3em;
+}
+
+#tabelASCII blockquote {
+    text-align: center;
+    font-size: 0.85em;
+}
+
+.red {
+    background-color: #f0aec0
+}
+
+#uni {
+    grid-area: u;
+    padding: 0.2em;
+    font-size: 1.1em;
+}
+
+#tabel {
+    font-size: 1.1em;
+}
+
+#table, th, td {
+    border: 1px solid black;
+}
+
+table {
+    border-spacing: 0px;
+}
+
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+
+#tabel h2 {
+    font-size: 1.1em;
+}
+
+#utf8pic {
+    width: 75%;
+    height: auto;
+}
+
+#utf8 {
+    text-align: center;
+} 
+
+#ref h2{
+    margin-bottom: -10px;
+}
+
+#ref {
+    grid-area: r;
+    background-color: #7781f5;
+    padding: 0.2em;
+    font-size: 1.1em;
+    color: white;
+}
+
+footer {
+    grid-area: foot;
+    font-size: 0.8em;
+    text-align: center;
+    background-color: black;
+    color: #aaa;
+    padding: 0.1em;
+}
+
+@media screen and (min-width: 800px) {
+    #pagewrap {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 1fr 1fr 2fr 2fr 1fr 1fr;
+        grid-template-areas: 
+            "head head"
+            "nav nav"
+            "char tabel"
+            "tekst eks"
+            "ref ref"
+            "foot foot"
+}
+
+body {
+    font-family: serif;
+    background-color: #ffffff;
+    margin: 0.5em;
+    color: #000;
+}
+
+header {
+    grid-area: head;
+    padding: 0.2em;
+    background-color: #7781f5;
+    font-size: 2em;
+    text-align: center;
+    font-family: sans-serif;
+    display: block;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #7781f5;
+    text-align: center;
+    max-height: 50px;
+    display: block;
+}
+
+nav ul {
+    text-align: middle;
+    font-size: 1.8em; 
+    margin-left: -1em;
+    display: inline;
+    vertical-align: middle; 
+    font-family: serif;
+}
+
+
+#menu {
+    width: auto;
+}
+
+#menu li {
+    display: inline;
+    padding: 5px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    background-color: black;
+}
+    
+#uni {
+    grid-area: tekst;
+}
+
+
+#tabelascii {
+    grid-area: tabel;
+    padding: 1em;
+    display: block;
+    padding-left: 1em;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-style: solid;
+    margin-top: -5em;
+}
+    
+#utf8 {
+    grid-area: eks;
+    padding-left: 1em;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-style: solid;
+}
+
+#ref {
+    grid-area: ref;
+    background-color: #7781f5;
+    text-align: left;
+    margin-top: 1em;
+
+}
+
+    h2 {
+        text-align: center;
+    }    
+    
+#charset {
+    grid-area: char;
+}    
+
+footer {
+    grid-area: foot;
+    font-size: 0.8em;
+    text-align: center;
+    background-color: black;
+    color: #aaa;
+    padding: 0.1em;
+}
+
+li a: hover {
+background-color: white;
+}
+
+a {
+    color: white;
+}
+
+
+a:link {
+    color: white;
+}
+
+a:hover {
+    color: #ddd;
+    border-color: white;
+    font-style: oblique;
+}
+
+a:active {
+    background-color: white;
+    border-color: black;
+    color: black;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Entities</title>
+        <link rel="stylesheet" href="entities.css">
+        <style>
+            a {
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="pagewrap">
+            <header>Entities </header>
+            <nav>  
+            <div>
+                <ul id="menu">
+                    <li id="forside"><a class="menulink" href="HTML%20CSS%20index.html">Forside</a></li>
+                    <li id="Charset"><a class="menulink" href="Charset.html">Karaktersæt</a></li>
+                    <li id="Entities"><a class="menulink" href="entities.html">Entities</a></li>
+                    <li id="Emojis"><a class="menulink" href="Emoji.html">Emojis</a></li>
+                    <li id="Symboler"><a class="menulink" href="symboler.html">Symboler</a></li>
+                </ul>
+            </div>
+            </nav>
+            
+            <section id="intro">
+                <!--<h2>HTML og CSS Workshop</h2>-->
+                    Entities i HTML er et stykke tekst der begynder med ampersand(<b>&amp;</b>), efterfulgt af en kode.
+            &nbsp;<p>
+                    Entities bruges oftest, til at vise tegn som enten er reserverede til at skulle udføre en funktion, eller tegn man ikke kan skrive på et normalt tastatur.
+                    Lad os sige at vi vil sætte ampersand ind et sted i vores tekst. Koden for ampersand er <b>&amp;#38;</b>, og navnet er <b>&amp;amp;</b>. Her ville man skulle skrive: <b>&amp;#38;</b> eller <b>&amp;amp;</b>, da tekst-editoren ellers ville opfatte det som en HTML funktion, hvorved browseren ville ikke vise det.
+                    Disse kaldes for henholdsvis entity numbers, og entity names. Alle entities har et entity number, men ikke alle har et entity name. Typisk er entity names nemmere at huske, men kan altså selvsagt ikke altid bruges. Alle entities har også en hexadecimal værdi, men de er typisk sammensat af bogstaver og tal, og er oftest længere og sværere at huske.</p>
+            &nbsp;<p>
+                    Alle karakterer på et tastatur har et tilsvarende entity number, men rigtigt mange, som fx. bogstaver og tal, kan skrives ind helt normalt, uden man behøver benytte et entity number.
+                    Entity numbers kan også bruges til at sætte karakterer ind, som man ikke kan skrive med et dansk tastatur. 
+                    Dette kan fx. være kyrilliske eller græske bogstaver som <b>Д: &amp;#1044;</b> og <b>β: &amp;#946;</b></p>
+            &nbsp;<p>
+                    En anden meget brugbar entity i HTML, er non-breaking space: <b>&amp;nbsp;</b>
+                    Non-breaking space er i sin helhed det samme som et mellemrum, men det opfører sig en smule anderledes i browseren. 
+                    Hvis man i sin kode vil lave 10 mellemrum, og man bare trykker på spacebar 10 gange, vil browseren ignorere 9 af de 10 mellemrum. Dette kan omgås med non-breaking space, hvor man kan sætte 10 x <b>&amp;nbsp;</b> ind i stedet. </p>
+            &nbsp;<p>
+                    Andre brugbare entities, kan være bogstaver med accenter. Fx. á, é, ñ, õ, osv. 
+                    De diakritiske tegn (`, ´, ~, ¨, osv.) har alle et nummer og et navn der hører til dem. De kan sættes i forlængelse af hvilket bogstav man skal bruge i koden. 
+                    Tilde (~) har f.eks. nummeret 771, og navnet tilde. Dvs., at hvis man skal lave “õ”, ville den hedde:  <b>o&amp;#771;</b> eller <b>&amp;otilde;</b> og hvis man skal lave “ñ”, ville den hedde: <b>n&amp;#771;</b> eller <b>&amp;ntilde;</b>.
+                    Her er en liste over, hvilket entity number de mest anvendte diakritiske tegn har i HTML, hvor det lille “o” kan erstattes af et vilkårligt bogstav, og dets tilsvarende store variant. </p>
+            &nbsp;
+            </section>
+            <section id="indhold">
+                <h2 id="ekso">Eksempler:</h2>
+                <img id="diakritiske" alt="Eksempler på koden for nogle af de diakritiske tegn." src="diakritisk.png">
+                <blockquote><p>Eksempler på koden for nogle af de diakritiske tegn.</p></blockquote>
+            </section>       
+                
+            <section id="ref">
+                <h2 class="uo">Links:</h2>
+                <ul>
+                    <li><a href="https://www.w3schools.com/html/html_entities.asp">https://www.w3schools.com/html/html_entities.asp</a></li>
+                    <li><a href="https://www.w3schools.com/charsets/ref_utf_diacritical.asp">Her er en liste over koderne for alle diakritiske tegn</a></li>
+                    <li><a href="https://www.w3schools.com/charsets/ref_utf_greek.asp">Her er en liste over koderne for græske bogstaver</a></li>
+                    <li><a href="https://www.w3schools.com/charsets/ref_utf_cyrillic.asp">Her er en liste over koderne for kyrilliske bogstaver</a></li>
+                </ul>
+            </section>
+            <footer>
+                    <p>&copy; Copyright Hanne Pedersen &amp; Terkel Blegager 2020</p>
+            </footer>
+        </div> <!-- pagewrap slut -->
+    </body>
+</html>

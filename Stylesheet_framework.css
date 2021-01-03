@@ -1,0 +1,30 @@
+
+.section {
+    border-bottom: 5px solid #ffa94c;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+#refleksion {
+    border-bottom-style: none;
+}
+
+/*Desktop*/
+@media screen and (min-width: 1920px) {
+
+    #lokal {
+        grid-area: l;
+    }
+    
+    #sky {
+        grid-area: s;
+    }
+    
+    #t_3 {
+        display: grid;
+        grid-template-areas:
+            "l s";
+    }
+}

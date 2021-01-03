@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="da">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <title>Karaktersæt</title>
+        <link rel="stylesheet" href="Charset.css">
+        <style>
+            a {
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="pagewrap">
+            <header id="overskrift"> Karaktersæt </header>
+
+            <nav>  
+            <div>
+                <ul id="menu">
+                    <li id="forside"><a href="HTML%20CSS%20index.html">Forside</a></li>
+                    <li id="karakter"><a href="Charset.html">Karaktersæt</a></li>
+                    <li id="entities"><a href="entities.html">Entities</a></li>
+                    <li id="emoji"><a href="Emoji.html">Emojis</a></li>
+                    <li id="symboler"><a href="symboler.html">Symboler</a></li>
+                </ul>
+            </div>
+            </nav>
+            
+            <section id="charset">
+                <div>
+                    <p>Karaktersæt også kaldet character sets (charset) er den attribute der definerer hvilke tegn (bogstaver, tal osv.) der bliver vist på siden.
+                        ASCII (American Standard Code for Information Interchange) var den første af disse karaktersæt. 
+                        Der kunne vise 128 forskellige tegn: de første 32 tegn, og det sidste tegn er kontroltegn (tegn der ikke repræsenterer et skrifttegn, men i stedet påvirker HTML dokumentet), som fx:</p> 
+                        <ul>
+                            <li>SOH (start of header), der angiver hvor headeren starter.</li>
+                            <li>STX (start of text), der angiver hvor teksten starter.</li>
+                        </ul>
+                    <p>Resten er grafiktegn (store og små bogstaver fra A-Z, tal fra 0-9) og specialtegn (symboler som / og !?). Alle tegnene har et tal som de kan skrives med i stedet.</p>
+                </div>
+            </section>
+            
+            <!--<section id="ASCII">
+                <img id="ascii" src="ASCII.png" alt="ASCII tabel">
+                <blockquote>Tabel over ASCII kode.</blockquote>
+            </section> -->
+            
+            <section id="tabelascii">
+                    <table>
+                        <tr>
+                            <th> </th>
+                            <th>0</th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                            <th>7</th>
+                            <th>8</th>
+                            <th>9</th>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>C</th>
+                            <th>D</th>
+                            <th>E</th>
+                            <th>F</th>
+                        </tr>
+                        <tr>
+                            <th>0</th>
+                            <td class="red">NUL</td>
+                            <td class="red">SOH</td>
+                            <td class="red">STX</td>
+                            <td class="red">ETX</td>
+                            <td class="red">EOT</td>
+                            <td class="red">ENQ</td>
+                            <td class="red">ACK</td>
+                            <td class="red">BEL</td>
+                            <td class="red">BS</td>
+                            <td class="red">HT</td>
+                            <td class="red">LF</td>
+                            <td class="red">VT</td>
+                            <td class="red">FF</td>
+                            <td class="red">CR</td>
+                            <td class="red">SO</td>
+                            <td class="red">SI</td>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <td class="red">DLE</td>
+                            <td class="red">DC1</td>
+                            <td class="red">DC2</td>
+                            <td class="red">DC3</td>
+                            <td class="red">DC4</td>
+                            <td class="red">NAK</td>
+                            <td class="red">SYN</td>
+                            <td class="red">ETB</td>
+                            <td class="red">CAN</td>
+                            <td class="red">EM</td>
+                            <td class="red">SUB</td>
+                            <td class="red">ESC</td>
+                            <td class="red">FS</td>
+                            <td class="red">GS</td>
+                            <td class="red">RS</td>
+                            <td class="red">US</td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td> </td>
+                            <td>!</td>
+                            <td>"</td>
+                            <td>#</td>
+                            <td>$</td>
+                            <td>%</td>
+                            <td>&amp;</td>
+                            <td>'</td>
+                            <td>&#40;</td>
+                            <td>&#41;</td>
+                            <td>*</td>
+                            <td>+</td>
+                            <td>,</td>
+                            <td>-</td>
+                            <td>.</td>
+                            <td>&#47;</td>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>:</td>
+                            <td>;</td>
+                            <td>&lt;</td>
+                            <td>=</td>
+                            <td>&gt;</td>
+                            <td>?</td>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <td>@</td>
+                            <td>A</td>
+                            <td>B</td>
+                            <td>C</td>
+                            <td>D</td>
+                            <td>E</td>
+                            <td>F</td>
+                            <td>G</td>
+                            <td>H</td>
+                            <td>I</td>
+                            <td>J</td>
+                            <td>K</td>
+                            <td>L</td>
+                            <td>M</td>
+                            <td>N</td>
+                            <td>O</td>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <td>P</td>
+                            <td>Q</td>
+                            <td>R</td>
+                            <td>S</td>
+                            <td>T</td>
+                            <td>U</td>
+                            <td>V</td>
+                            <td>W</td>
+                            <td>X</td>
+                            <td>Y</td>
+                            <td>Z</td>
+                            <td>&#91;</td>
+                            <td>\</td>
+                            <td>&#93;</td>
+                            <td>^</td>
+                            <td>_</td>
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <td>&#96;</td>
+                            <td>a</td>
+                            <td>b</td>
+                            <td>c</td>
+                            <td>d</td>
+                            <td>e</td>
+                            <td>f</td>
+                            <td>g</td>
+                            <td>h</td>
+                            <td>i</td>
+                            <td>j</td>
+                            <td>k</td>
+                            <td>l</td>
+                            <td>m</td>
+                            <td>n</td>
+                            <td>o</td>
+                        </tr>
+                        <tr>
+                            <th>7</th>
+                            <td>p</td>
+                            <td>q</td>
+                            <td>r</td>
+                            <td>s</td>
+                            <td>t</td>
+                            <td>u</td>
+                            <td>v</td>
+                            <td>w</td>
+                            <td>x</td>
+                            <td>y</td>
+                            <td>z</td>
+                            <td>&#123;</td>
+                            <td>|</td>
+                            <td>&#124;</td>
+                            <td>~</td>
+                            <td class="red">DEL</td>
+                        </tr>
+                    </table>
+                <blockquote>Tabel over ASCII kode. De røde felter viser kontroltegnene.</blockquote>
+                </section>
+            
+            <section id="uni">
+                <p>Unicode, som er det der bruges i dag, er gået fra at kunne vise over 7000 tegn til 137000 tegn, da det skal kunne bruges til så meget som muligt. Den er backwards compatible med ASCII, så man nemt kan skifte fra ASCII til Unicode, dog er der mange nye tegn i Unicode, der ikke vil blive vist med ASCII. Den måde det det er encoded (konverteret fra tal til binary er utf-8 (Unicode Transformation Formal 8-bit), som er det der er standarden for HTML5.</p>
+                <section id="tabel">
+                   <h2>Eksempel:</h2>
+                    <table>
+                        <tr>
+                            <th>Word</th>
+                            <th>Character set (Unicode)</th>
+                            <th>Encoding (UTF-8)</th>
+                        </tr>
+                        <tr>
+                            <td>hello</td>
+                            <td>104 101 108 108 111</td>
+                            <td>01101000 01100101 01101100 01101100  01101111</td>
+                        </tr>
+                    </table>
+                </section>
+                <p>For at definere det i ens HTML dokument skriver man: &lt;meta&nbsp;charset=”utf-8”&gt; under head.</p>
+            </section>
+
+            <section id=utf8>
+                <img id="utf8pic" src="UTF-8.PNG" alt="UTF-8 i HTML">
+                <blockquote>Eksempel på utf-8 i HTML.</blockquote>
+            </section>
+            
+            <section id="ref">
+                <h3 class="uo">Links:</h3>
+                    <ul>
+                        <li><a href="https://www.w3schools.com/charsets/ref_html_utf8.asp" target="_blank">w3schools (UTF-8)</a></li>
+                        <li><a href="https://www.w3schools.com/charsets/ref_html_ascii.asp" target="_blank">w3schools (ASCII)</a></li>
+                        <li><a href="https://www.linkedin.com/learning/html-essential-training-4/supporting-languages?u=37312532" target="_blank">Linkedin learning</a></li>
+                        <li><a href="https://www.geeksforgeeks.org/control-characters/" target="_blank">Geeks for Geeks</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/ASCII#Control_characters" target="_blank">Wikipedia</a></li>
+                    </ul>
+            </section>
+            
+            <footer>
+                    <p>&copy; Copyright Hanne Pedersen &amp; Terkel Blegager 2020</p>
+            </footer>
+        </div><!-- pagewrap -->
+    </body>
+</html>

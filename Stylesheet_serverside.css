@@ -1,0 +1,71 @@
+
+.section {
+    border-bottom: 5px solid #ffa94c;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+table {
+    margin-bottom: 10px;
+}
+
+#picimg, #eksimg, #absimg {
+    width: 100%;
+    height: auto;
+}
+
+#refleksion {
+    border-bottom-style: none;
+}
+
+/*Desktop*/
+@media screen and (min-width: 1920px) {
+
+    .img_section {
+        text-align: center;
+    }
+    
+    #absimg {
+        width: 75%;
+        height: auto;  
+    }
+    
+    #picimg {
+        width: 50%;
+        height: auto;
+    }
+    
+    /*Eksempel*/
+    #eksimg {
+        width: 65%;
+        height: auto;
+    }
+    
+    #eks {
+        grid-area: eks;
+    }
+    
+    #text1 {
+        grid-area: t1;
+    }
+    
+    #text2 {
+        grid-area: t2;
+    }
+    
+    #t_7 {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+            "t1 eks"
+            "t2 eks"
+            "button .";
+    }
+    
+    .button {
+        width: 165px;
+        grid-area: button;
+    }
+}

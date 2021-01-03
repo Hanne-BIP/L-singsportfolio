@@ -153,10 +153,10 @@ th {
 
 @media screen and (min-width: 1920px) {
     .centerbutton{
-    text-align: center;
-    height: 35px;
-    width: 160px;
-    line-height: 35px;
+        text-align: center;
+        height: 35px;
+        width: 160px;
+        line-height: 35px;
     }
     
     li {
