@@ -1,0 +1,248 @@
+
+.section {
+    border-bottom: 5px solid #ffa94c;
+}
+
+#ntimg, #dntimg {
+    width: 50%;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Petrona', serif;
+}
+
+#text1, #nyhed, #digital, #subjektiv {
+    border-bottom: 5px dashed #ffa94c;
+}
+
+#aidaimg {
+    width: 75%;
+}
+
+#refleksion {
+    border-bottom-style: none;
+}
+
+/*Webtekst*/
+#h3_1 {
+    grid-area: h3_1;
+}
+
+#text1_1 {
+    grid-area: t1_1;
+    border-right: 2.5px dashed #ffa94c;
+}
+
+#text1_1 h4, #text1_1 p {
+    margin-right: 5px;
+}
+
+#text1_2 {
+    grid-area: t1_2;
+    border-left: 2.5px dashed #ffa94c;
+}
+
+#text1_2 h4, #text1_2 p {
+    margin-left: 5px;
+}
+
+#text1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "h3_1 h3_1"
+        "t1_1 t1_2";
+}
+
+#h3_2 {
+    grid-area: h3_2;
+}
+
+#text2_1 {
+    grid-area: t2_1;
+    border-right: 2.5px dashed #ffa94c;
+}
+
+#text2_1 h4, #text2_1 p {
+    margin-right: 5px;
+}
+
+#text2_2 {
+    grid-area: t2_2;
+    border-left: 2.5px dashed #ffa94c;
+}
+
+#text2_2 h4, #text2_2 p {
+    margin-left: 5px;
+}
+
+#text2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "h3_2 h3_2"
+        "t2_1 t2_2";
+}
+
+/*Desktop*/
+@media screen and (min-width: 1920px) {
+    
+    .img_section {
+        text-align: center;
+    }
+    /*Artikel*/
+    #nyhed, #digital, #subjektiv {
+        border-bottom-style: none;
+    }
+    
+    #a_intro {
+        grid-area: intro;
+    }
+    
+    /*nyhed*/
+    #h3_n {
+        grid-area: h3_n;
+        margin-right: 5px;
+    }
+    
+    #intro_n {
+        grid-area: intro_n;
+        margin-right: 5px;
+    }
+    
+    #list_n {
+        grid-area: list_n;
+    }
+    
+    #nt {
+        grid-area: nt;
+        margin-right: 5px;
+    }
+    
+    #ntimg {
+        width: 75%;
+    }
+    
+    #source_n {
+        grid-area: source_n;
+    }
+    
+    #nyhed {
+        grid-area: n;
+        display: grid;
+        grid-template-areas:
+            "h3_n h3_n"
+            "intro_n intro_n"
+            "list_n nt"
+            "source_n nt";
+        border-right: 2.5px dashed #ffa94c;
+        border-bottom: 2.5px dashed #ffa94c;
+    }
+    
+    /*digital*/
+    #h3_d {
+        grid-area: h3_d;
+        margin-right: 5px;
+    }
+    
+    #intro_d {
+        grid-area: intro_d;
+        margin-right: 5px;
+    }
+    
+    #dnt {
+        grid-area: dnt;
+        margin-right: 5px;
+    }
+    
+    #dntimg {
+        width: 75%;
+    }
+    
+    #source_d {
+        grid-area: source_d;
+    }
+    
+    #digital {
+        grid-area: d;
+        display: grid;
+        grid-template-areas:
+            "h3_d h3_d"
+            "intro_d dnt"
+            "source_d dnt";
+        border-right: 2.5px dashed #ffa94c;
+        border-top: 2.5px dashed #ffa94c;
+    }
+    
+    #subjektiv {
+        grid-area: s;
+        border-left: 2.5px dashed #ffa94c;
+        border-bottom: 2.5px dashed #ffa94c;
+    }
+    
+    #subjektiv h3, #subjektiv p, #subjektiv ul, #produkt_emne h3, #produkt_emne p, #produkt_emne ul {
+        margin-left: 5px;
+    }
+    
+    #produkt_emne {
+        grid-area: p;
+        border-left: 2.5px dashed #ffa94c;
+        border-top: 2.5px dashed #ffa94c;
+    }
+    
+    #t_3 {
+        display: grid;
+        grid-template-areas:
+            "intro intro"
+            "n s"
+            "d p";
+    }
+    
+    /*Annonce*/
+    #aidaimg {
+        width: 45%;
+    }
+    
+    #aida_intro {
+        grid-area: aida_intro;
+    }
+    
+    #aida_list {
+        grid-area: aida_list;
+    }
+    
+    #aida {
+        grid-area: aidaimg;
+    }
+    
+    #aida_section {
+        display: grid;
+        grid-template-areas: 
+            "aida_intro aidaimg"
+            "aida_list aidaimg";
+    }
+    
+    /*læseren*/
+    #råd {
+        grid-area: råd:
+    }
+    
+    #klarhed {
+        grid-area: klarhed;
+    }
+    
+    #t_7 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "råd klarhed";
+    }
+    
+    .button {
+        width: 165px;
+        grid-area: button;
+    }
+    
+}

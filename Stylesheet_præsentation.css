@@ -1,0 +1,44 @@
+
+.section {
+    border-bottom: 5px solid #ffa94c;
+}
+
+#sec1 {
+    border-bottom-style: none;
+}
+
+#fiskimg {
+    width: 100%;
+}
+
+#refleksion {
+    border-bottom-style: none;
+}
+
+/*Desktop*/
+@media screen and (min-width: 1920px) {
+    
+    .img_section {
+        text-align: center;
+    }
+    
+    #intro {
+        grid-area: intro;
+    }
+    
+    #fisklist {
+        grid-area: fisk;
+    }
+    
+    #retorik {
+        grid-area: retorik;
+    }
+    
+    #t_5 {
+        display: grid;
+        grid-template-areas:
+            "intro fisk"
+            "retorik fisk";
+    }
+    
+}

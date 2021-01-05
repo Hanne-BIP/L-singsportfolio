@@ -1,0 +1,13 @@
+
+.section {
+    border-bottom: 5px solid #ffa94c;
+}
+
+#refleksion {
+    border-bottom-style: none;
+}
+
+/*Desktop*/
+@media screen and (min-width: 1920px) {
+    
+}
