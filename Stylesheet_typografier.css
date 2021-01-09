@@ -4,8 +4,7 @@
 }
 
 #anatomy {
-    width: 50%;
-    height: 50%;
+    width: 100%;
 }
 
 h3 {
@@ -56,8 +55,7 @@ h3 {
 /*Begreber*/
     
     #anatomy {
-        width: 105%;
-        height: 105%;
+        width: 100%;
     }
     
     #sec4 .img_section {

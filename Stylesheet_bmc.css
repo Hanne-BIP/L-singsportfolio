@@ -31,6 +31,10 @@ h3 {
 /*Desktop*/
 @media screen and (min-width: 1920px) {
     
+    .img_section {
+        text-align: center;
+    }
+    
     #np, #na, #nr, #vt, #kr, #kn, #ks, #os, #is {
     border: 2.5px solid #ffa94c;
     }

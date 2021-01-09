@@ -26,9 +26,13 @@
         text-align: center;
     }
     
-    #empimg, #bsimg, #wf1img, #wf2img {
+    #empimg, #bsimg {
         width: 50%;
         height: auto;
+    }
+    
+    #wf1img, #wf2img {
+        width: 75%;
     }
     
     #hiimg {
