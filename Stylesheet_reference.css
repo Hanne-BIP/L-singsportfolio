@@ -43,8 +43,9 @@
         grid-area: nav;
     }  
     
-    #intro {
-        text-align: center;
+    .button {
+        width: 215px;
+        grid-area: button;
     }
     
     .button {

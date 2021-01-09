@@ -7,10 +7,79 @@
     border-bottom-style: none;
 }
 
+#kotlerimg {
+    width: 100%;
+}
+
 /*Desktop*/
 @media screen and (min-width: 1920px) {
-    .button {
-        width: 165px;
-        grid-area: button;
+    .img_section {
+        text-align: center;
     }
+    
+    #sec2, #sec3, #sec5, #sec6 {
+        border-bottom: 5px dashed #ffa94c;
+    }
+    
+    /*IMK*/
+    #imk_intro {
+        grid-area: imk_intro;
+    }
+    
+    #imk {
+        grid-area: imkimg;
+    }
+    
+    #imk_element {
+        grid-area: imk_element;
+    }
+    
+    #t_3 {
+        display: grid;
+        grid-template-areas: 
+            "imk_intro imk_intro"
+            "imk_element imkimg";
+    }
+    
+    /*thorlacius*/
+    
+    #thor_intro {
+        grid-area: thor_intro;
+    }
+    
+    #thor {
+        grid-area: thorimg;
+    }
+    
+    #thor_element {
+        grid-area: thor_element;
+    }
+    
+    #t_4 {
+        display: grid;
+        grid-template-areas: 
+            "thor_intro thor_intro"
+            "thor_element thorimg";
+    }
+    
+    /*kotler*/
+    #kotler_intro {
+        grid-area: kotler_intro;
+    }
+    
+    #kotler {
+        grid-area: kotlerimg;
+    }
+    
+    #kotler_kritik {
+        grid-area: kotler_kritik;
+    }
+    
+    #t_7 {
+        display: grid;
+        grid-template-areas: 
+            "kotler_intro kotler_intro"
+            "kotler_kritik kotlerimg";
+    }
+   
 }

@@ -1,0 +1,74 @@
+
+.section {
+    border-bottom: 5px solid #ffa94c;
+}
+
+#refleksion {
+    /*border-top: 5px solid #ffa94c;*/
+    border-bottom-style: none;
+}
+
+#pc_indeximg, #pc_pageimg, #mobil_indeximg, #mobil_pageimg, #bilagimg {
+    width: 100%;
+}
+
+#opstart, #emner {
+    border-bottom: 5px dashed #ffa94c;
+}
+
+.centerbutton{
+    text-align: center;
+    height: 35px;
+    width: 260px;
+    line-height: 35px;
+}
+
+/*Desktop*/
+@media screen and (min-width: 1920px) {
+    .img_section {
+        text-align: center;
+    }   
+
+    /*wireframes*/
+    
+    #pc_indeximg, #pc_pageimg, #mobil_indeximg, #mobil_pageimg, #bilagimg {
+       width: 98%;
+        /*width: 35%;*/
+    }
+    
+    
+    #mobil_index {
+        grid-area: mi;
+    }
+    
+    #mobil_page {
+        grid-area: mp;
+    }
+    
+    #pc_index {
+        grid-area: pi;
+    }
+    
+    #pc_page {
+        grid-area: pp;
+    }
+    
+    #bilag {
+        grid-area: b;
+    }
+    
+    #wireframes {
+        display: grid;
+        grid-template-areas:
+            "mi mp b"
+            "pi pp .";
+    }
+    
+    
+    
+    #buttons {
+        text-align: center;
+    }
+    
+    
+}

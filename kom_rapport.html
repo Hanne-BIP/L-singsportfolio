@@ -2,12 +2,12 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Webudvikling - Frameworks</title>
+        <title>Kommunikation - Praktisk arbejde med usability</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Petrona:wght@700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
         <link rel="stylesheet" href=Stylesheet_layout.css>
-        <link rel="stylesheet" href="Stylesheet_framework.css">
+        <link rel="stylesheet" href="Stylesheet_rapport.css">
         <link rel="stylesheet" href="menu.css">
     </head>
     
@@ -15,7 +15,7 @@
         <div id="grid">
             
             <header>
-                <h1 id="headline_header">Frameworks</h1>
+                <h1 id="headline_header">Praktisk arbejde med usability</h1>
             </header>
             
                         <!-- Bootstrap Navbar -->
@@ -115,76 +115,24 @@
             
         <section id="margin">
             
-        <!--Intro-->
+        <!--Introduktion-->
         <section class="section" id="sec1">
             <h2 id="h2_1">Introduktion:</h2>
             <section id="t_1" class="text">
-                <p>Frameworks er en gruppe standardiserede kode elementer man kan bruge til at forskellige funktioner og layouts på en struktureret og effektiv måde.
-                <br>Fordelen er at man ikke behøver at starte fra bunden af, da man kan bruge det andre har lavet i forvejen. Samtidig kan man ikke rigtig ændre på frameworket, så hvis man ikke er helt tildfreds med det, kan man ikke gøre så meget ved det.</p>
+                <p>Fra d. 22/10 til d. 26/10 skulle vi i grupper lave en rapport over forskellige usability testmetoder inden for områderne: informationsarkitektur, interaktionsdesign og forståelighed for bruger. Min gruppe delte det op, og jeg skulle lave om informationsarkitektur. </p>
+                <p><a href="kom_usability.html">Afsnittet om kortsortering og gangster testen kan findes på den her side.</a></p>
+                <button class="button" type="button">
+                    <div class="centerbutton"><p><a href="PDF/Usability%20rapport.pdf" target="_blank">Se rapport</a></p></div>
+                </button>
             </section>
-            <p class="source">Kilde: <a href="https://eadania.mrooms.net/course/view.php?id=2649#section-19" target="_blank">Modul om frameworks (NIOS 19/10 2020)</a></p>
         </section>   
-            
-        <!--Indhold-->    
-        <section class="section" id="sec2">
-            <h2 id="h2_2">Indholdet i et framework:</h2>
-            <section id="t_2" class="text">
-                <p>Et framework indeholder typisk:</p>
-                <ul>
-                    <li><b>HTML:</b> typisk template og snippets.</li>
-                    <li><b>CSS:</b> typisk en større fil der understøtter alt.</li>
-                    <li><b>Javascript:</b> typisk en større samling funktioner som anvendes af dele resten af koden.</li>
-                </ul>
-                <p>Med frameworks kan man hurtigt lave noget der ser ordentligt ud og som virker, uden man selv behøver at sidde og finde på noget (det kan så også gøre man ikke lærer noget af det, siden det er lavet i forvejen).
-                <br>Siden bliver mange gange større end hvis man selv kodede det i hånden, hvilket er dårligt for SEO. Derudover kan selve frameworkfilerne godt være noget større og med mere kode end man skal bruge, hvilket også er dårligt for SEO. Og da frameworks er noget alle kan bruge, kan ens side blive svær at gøre unik designmæssigt.</p>
-            </section>   
-            <p class="source">Kilde: <a href="https://eadania.mrooms.net/course/view.php?id=2649#section-19" target="_blank">Modul om frameworks (NIOS 19/10 2020)</a></p>
-        </section>
-            
-        <!--Hosting-->    
-        <section class="section" id="sec3">
-            <h2 id="h2_3">Hosting:</h2>
-                <section id="t_3" class="text">
-                    <section id="lokal">
-                        <h3>Lokal installation:</h3>
-                        <p>Hvor man downloader filerne og integrer dem på sin hjemmeside. Det betyder man har styr på adgangen (hvis sitet kører, så kører det hele) og man har styr på hvilke versioner af siden man bruger og man kan tilpasse dem. Man kan også teste lokalt, uden netværksforbindelser.</p>
-                    </section>
-                    <section id="sky">
-                        <h3>Hostet i skyen:</h3>
-                        <p>Hvor man linker filer der ligger på en server på nettet (fx: via en CDN (Content Distribution Network) model). Der er man så afhængig af at serveren kører og har en god hastighed, ellers kan det blive svært at kører. Og da det er over nettet, kan man risikerer at blive hacket.
-                        <br>Når det bliver hentet af brugeren første gang, bliver siden måske cached, så siden bare kan hentes fra ens pc, men der er ingen garanti.
-                        <br>Om ens bruger kan se siden afhænger også af hvilket land de er i, siden nogle lande har filteret hvilke sider landets befolkning kan se.</p>
-                    </section>
-                </section>
-            <p class="source">Kilde: <a href="https://eadania.mrooms.net/course/view.php?id=2649#section-19" target="_blank">Modul om frameworks (NIOS 19/10 2020)</a></p>
-        </section>
-        
-        <!--Bootstrap-->
-        <section class="section" id="sec4">
-            <h2 id="h2_4">Bootstrap:</h2>
-            <section id="t_4" class="text"> 
-                <p>Bootstrap er et front-end (fokuserer på layout og design) framework. Den bygger på et 12 kolonner grid, men det er ikke anbefalet at bruge det grid, da det i CSS virker bedre. 
-                <br>Bootstrap har 4 breakpoints: xs (mobil), sm (tablets), md (desktops), lg (større desktops). Når man skal finde noget fra Bootstrap at sætte ind (til fx menuer), skal man holde øje med hvilken størrelse det er til, specielt hvis man laver responsivt design.
-                <br>Bootstrap kan være rigtig god til at finde dele der måske kan være svære at lave selv når man koder, fx: menuer.</p>
-            </section>  
-            <p class="source">Kilde: <a href="https://eadania.mrooms.net/course/view.php?id=2649#section-19" target="_blank">Modul om frameworks (NIOS 19/10 2020)</a></p>
-        </section>
-        
-        <!--Øvelse-->
-        <section class="section" id="sec5">
-            <h2 id="h2_5">Øvelse:</h2>
-            <section id="t_5" class="text"> 
-                <p>I denne øvelse skulle jeg prøve at indsætte forskellige Bootstrap elementer som en menu og collapsible elements. Har også sat en billedkarrusel ind.</p>
-                <p>(Af en eller anden grund er jeg nødt til at reloade siden nogle gange før billedakarusselen virker)
-                <br> <a href="Hjemmesider/Bootstrap%20side.html" target="_blank">Se side.</a></p>
-            </section>   
-        </section>    
-            
+       
         <!--Refleksion-->
         <section class="section" id="refleksion">
             <h2 id="h2_r">Refleksion:</h2>
-            <p>Jeg synes selv jeg har nogenlunde nemt ved at forstå hvad et framework er og hvad det bruges til. I forhold til at bruge Bootstrap kan jeg sådan nogenlunde finde ud af det. Jeg har lidt svært ved at finde de scripts man skal have i sin HTML fil for at det fungerer (og nogle gange glemmer jeg dem helt og kan ikke finde ud af hvorfor det ikke virker), men at rette i det og splejse det sammen med andet Bootstrap/egen kode kan jeg godt finde ud af (fx: er min menu i mit Portfolio lavet af noget Bootstrap jeg selv har rettet i så det kom mere end én dropdown knap). At style kan dog være noget af en udfordring når man ikke selv har givet det id’er/classes og det kan være lidt træls at skulle prøve sig frem i stedet for hvis man fra starten vidste hvad der var hvad. 
-            <br>Jeg føler lidt at jeg selv burde kunne lave nogle af de ting man bruger Bootstrap til, fx: prøvede jeg selv at lave menuen til mit Portfolio uden Bootstrap, hvilket gav mig mange problemer og der var ting jeg ikke kunne få til at fungere når siden skulle være responsiv, så efter flere dages arbejde besluttede jeg mig for at bruge Bootstrap i stedet. Det var frustrerende, men jeg skal nok personligt være bedre til at vurderer hvor mit niveau er lige nu og hvor jeg ville ønske, det var og bruge den hjælp jeg har til rådighed (også selvom jeg helst vil selv), så jeg ikke kommer til at spilde så meget tid fremover.</p>
+            <p>Hvis jeg havde muligheden for det, ville jeg gerne have lavet rapporten om. Jeg synes den del jeg har skrevet (om informationsarkitektur) blev god, men jeg brugte også meget mere tid på min del end de andre gjorde på deres. Det kan man så også godt se på det færdige resultat, efter min mening. Der er tydelige punkter i rapporten hvor man kan se det er forskellige der har skrevet det, hvilket jeg gerne ville have rettet så det blev ensartet, men der var ikke tid nok til at gøre det ved hele rapporten, og det ville også kræve at jeg ville komme til at skrive på de andres dele (en af mine gruppemedlemmer havde ikke tid halvdelen af dagen, så var kommet til at skulle skrive på hans del). Opgaven blev egentlig opdelt fordi jeg havde planer den weekend og ikke vidste hvor meget tid jeg havde, så det var lidt frustrerende at finde ud af jeg stadig havde lavet mere end dem når de havde mere tid.
+            <br>Jeg indrømmer at mine standarder nok er lidt højere end de flestes i forhold til afleveringer, men jeg prøver at se mere realistisk på det når det er gruppeafleveringer, og vi burde nok have været bedre til at forventningsafstemme i gruppen som der er blevet gjort i nogle af de andre afleveringer. Til en anden gang, ville jeg nok heller ikke dele emnerne op på den måde, det ville løse at rapporten ikke var ensartet og vi havde alle lært noget om alle testmetoderne vi brugte, i stedet for kun om dem vi selv skrev om. 
+            <br>De testmetoder jeg havde om, kortsortering og gangster testen, var sjove at afprøve, og jeg lærer bedst ved praktisk udførelse, så føler jeg har meget godt styr på dem efter det.</p>
         </section>
             
         </section>
