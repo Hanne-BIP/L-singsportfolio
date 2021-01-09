@@ -1,8 +1,7 @@
-
 #footer {
-    background-color: black;
+    background-color: #ffa94c;
     color: white;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     text-align: center;
@@ -12,32 +11,5 @@
 
 /*Desktop*/
 @media screen and (min-width: 1920px) {
-    /*
-    #grid {
-        display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: 4fr 1fr 2fr 16fr;
-        grid-template-areas: 
-        "head head head"
-        "nav nav nav"
-        "h3 h3 h3"
-        "text text text";
-    }*/
-    /*
-    #headline_header {
-        text-align: center;
-    }*/
-    
-    /*
-    header h3 {
-       display: none;
-    }  */  
 
-    /*#headline {
-        font-size: 5em;
-        background-color: deeppink;
-        text-align: center;
-    }*/
-     
-    
 }
